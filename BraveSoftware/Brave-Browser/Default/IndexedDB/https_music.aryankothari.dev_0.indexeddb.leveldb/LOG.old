@@ -1,7 +1,0 @@
-2023/12/06-10:03:00.848 b6c Reusing MANIFEST /home/arya/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_music.aryankothari.dev_0.indexeddb.leveldb/MANIFEST-000001
-2023/12/06-10:03:00.848 b6c Recovering log #3
-2023/12/06-10:03:00.848 b6c Reusing old log /home/arya/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_music.aryankothari.dev_0.indexeddb.leveldb/000003.log 
-2023/12/06-10:03:32.867 b6c Level-0 table #5: started
-2023/12/06-10:03:32.871 b6c Level-0 table #5: 27186 bytes OK
-2023/12/06-10:03:32.874 b6c Delete type=0 #3
-2023/12/06-10:03:32.874 b6c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

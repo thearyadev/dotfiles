@@ -1,6 +1,0 @@
-2023/12/10-19:42:03.423 101a Reusing MANIFEST /home/arya/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
-2023/12/10-19:42:03.424 101a Recovering log #74
-2023/12/10-19:42:03.425 101a Reusing old log /home/arya/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000074.log 
-2023/12/10-19:49:37.738 1011 Level-0 table #78: started
-2023/12/10-19:49:37.747 1011 Level-0 table #78: 101400 bytes OK
-2023/12/10-19:49:37.752 1011 Delete type=0 #74
