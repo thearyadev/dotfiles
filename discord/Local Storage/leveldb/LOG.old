@@ -1,9 +1,0 @@
-2023/12/10-19:34:26.523 5bd Reusing MANIFEST /home/arya/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2023/12/10-19:34:26.524 5bd Recovering log #64
-2023/12/10-19:34:26.524 5bd Reusing old log /home/arya/.config/discord/Local Storage/leveldb/000064.log 
-2023/12/10-19:35:26.941 620 Level-0 table #70: started
-2023/12/10-19:35:26.949 620 Level-0 table #70: 60204 bytes OK
-2023/12/10-19:35:26.953 620 Delete type=0 #64
-2023/12/10-19:38:09.300 a08 Level-0 table #72: started
-2023/12/10-19:38:09.322 a08 Level-0 table #72: 2713079 bytes OK
-2023/12/10-19:38:09.326 a08 Delete type=0 #69
