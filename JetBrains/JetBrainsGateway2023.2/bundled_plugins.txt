@@ -1,0 +1,10 @@
+com.intellij|null
+
+com.jetbrains.gateway.terminal|null
+
+com.jetbrains.space|null
+
+org.jetbrains.plugins.docker.gateway|Remote Development
+
+org.jetbrains.plugins.terminal|Other Tools
+

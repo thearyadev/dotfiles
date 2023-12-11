@@ -1,0 +1,121 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Copy">
+      <i c="12" l="1701924482617" />
+    </e>
+    <e n="$Cut">
+      <i c="2" l="1701924180758" />
+    </e>
+    <e n="$Paste">
+      <i c="15" l="1701926117757" />
+    </e>
+    <e n="$SelectAll">
+      <i c="1" l="1701819514963" />
+    </e>
+    <e n="$Undo">
+      <i c="2" l="1701819566589" />
+    </e>
+    <e n="AutoIndentLines">
+      <i c="2" l="1701924526802" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="1131" l="1701925270675" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="2" l="1701924444340" />
+    </e>
+    <e n="EditorChooseLookupItemReplace">
+      <i c="18" l="1701924677734" />
+    </e>
+    <e n="EditorDown">
+      <i c="31" l="1701924681277" />
+    </e>
+    <e n="EditorEnter">
+      <i c="129" l="1701924679999" />
+    </e>
+    <e n="EditorEscape">
+      <i c="44" l="1701924682182" />
+    </e>
+    <e n="EditorLeft">
+      <i c="1" l="1701819283766" />
+    </e>
+    <e n="EditorRight">
+      <i c="45" l="1701819552320" />
+    </e>
+    <e n="EditorStartNewLine">
+      <i c="1" l="1701819300948" />
+    </e>
+    <e n="EditorTab">
+      <i c="27" l="1701924663243" />
+    </e>
+    <e n="EditorUp">
+      <i c="41" l="1701924663026" />
+    </e>
+    <e n="ForwardPortAction">
+      <i c="1" l="1701820785281" />
+    </e>
+    <e n="ForwardPortAndNavigateInBrowser">
+      <i c="2" l="1701921446676" />
+    </e>
+    <e n="MoreRunToolbarActions">
+      <i c="1" l="1701819568195" />
+    </e>
+    <e n="NextTemplateVariable">
+      <i c="1" l="1701922606891" />
+    </e>
+    <e n="SaveAll">
+      <i c="3" l="1701921800028" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="1" l="1701819569508" />
+    </e>
+    <e n="ShowIntentionActions">
+      <i c="10" l="1701923787498" />
+    </e>
+    <e n="ShowSettings">
+      <i c="1" l="1701819570687" />
+    </e>
+    <e n="SplitVertically">
+      <i c="2" l="1701923913238" />
+    </e>
+    <e n="Terminal.NewTab">
+      <i c="1" l="1701921484250" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="1" l="1701923887018" />
+    </e>
+    <e n="UnattendedHostMenuLabel">
+      <i c="2" l="1701820329148" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
+      <i c="1297" l="1701925270674" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="14" l="1701923914507" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="38" l="1701926120674" />
+    </e>
+    <e n="com.intellij.terminal.actions.TerminalActionWrapper">
+      <i c="1" l="1701821060616" />
+    </e>
+    <e n="com.intellij.toolWindow.ShowMoreToolWindowsAction">
+      <i c="1" l="1701922734587" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1701820385863" />
+    </e>
+    <e n="com.jetbrains.rd.ui.util.ShortcutsKt$registerShortcuts$1$1">
+      <i c="5" l="1701923263387" />
+    </e>
+    <e n="com.jetbrains.rdclient.actions.base.BackendAction">
+      <i c="59" l="1701925251251" />
+    </e>
+    <e n="com.jetbrains.thinclient.actions.ThinClientDelegatingActionPromoter$FallbackAction">
+      <i c="73" l="1701926118786" />
+    </e>
+    <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
+      <i c="1" l="1701921799826" />
+    </e>
+  </component>
+</application>

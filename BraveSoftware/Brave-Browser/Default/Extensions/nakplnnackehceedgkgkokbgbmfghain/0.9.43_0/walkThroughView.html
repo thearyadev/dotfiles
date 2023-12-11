@@ -1,0 +1,454 @@
+<html><head><title>Welcome!</title><style>body {
+      font-family: sans-serif;
+    }
+
+    .first-page-container {
+      margin: 50px 50px 0 50px;
+    }
+
+    .title {
+      height: 46px;
+      color: #000000;
+      font-size: 36px;
+      font-weight: 300;
+      letter-spacing: -1.5px;
+      line-height: 46px;
+      display: flex;
+    }
+
+    .title > .intro-img {
+      width: 36px;
+      padding-right: 30px;
+    }
+
+    .title > span {
+      border-left: 1px solid #E7E7E7;
+      padding-left: 30px;
+    }
+
+    .first-text {
+      width: 400px;
+      color: #656565;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 19px;
+      margin-left: 100px;
+      width: 400px;
+    }
+
+    .button {
+      height: 43px;
+      max-width: 225px;
+      border-radius: 24px;
+      background-color: #0037F6;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0 15px 100px;
+    }
+
+    .default {
+      color: #949494;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 19px;
+      margin-left: 100px;
+      cursor: pointer;
+    }
+
+    .second-page-container {
+      margin: 50px;
+      display: none;
+    }
+
+    .title {
+      height: 46px;
+      color: #000000;
+      font-size: 36px;
+      font-weight: 300;
+      letter-spacing: -1.5px;
+      line-height: 46px;
+      display: flex;
+    }
+
+    .title > .thinking-img {
+      width: 36px;
+      padding-right: 30px;
+    }
+
+    .title > span {
+      border-left: 1px solid #E7E7E7;
+      padding-left: 30px;
+    }
+
+    .first-text {
+      width: 400px;
+      color: #949494;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 23px;
+      margin-left: 100px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .setting-row {
+      display: flex;
+      align-items: center;
+      margin-left: 100px;
+      margin-bottom: 15px;
+    }
+
+    .toggle {
+      width: 55px;
+      height: 30px;
+      background: #E2E7EF;
+      border-radius: 20px;
+      position: relative;
+      transition: background .1s;
+      float: left;
+      cursor: pointer;
+    }
+
+    .toggle.active {
+      background: #007359;
+    }
+
+    .toggle:after {
+      content: ' ';
+      position: absolute;
+      left: 2px;
+      top: 3px;
+      background: #fff;
+      width: 24px;
+      height: 24px;
+      border-radius: 18px;
+      transition: left .1s;
+    }
+
+    .toggle.active:after {
+      left: 28px;
+    }
+
+    .setting-text {
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 23px;
+      padding-left: 15px;
+    }
+
+    .button {
+      height: 43px;
+      border-radius: 24px;
+      background-color: #0037F6;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .current-page {
+      color: #949494;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 19px;
+      margin-left: 100px;
+    }
+
+    .third-page-container {
+      margin: 50px;
+      display: none;
+    }
+
+    .title {
+      height: 46px;
+      color: #000000;
+      font-size: 36px;
+      font-weight: 300;
+      letter-spacing: -1.5px;
+      line-height: 46px;
+      display: flex;
+    }
+
+    .title > .thinking-img {
+      width: 36px;
+      padding-right: 30px;
+    }
+
+    .title > span {
+      border-left: 1px solid #E7E7E7;
+      padding-left: 30px;
+    }
+
+    .first-text {
+      width: 400px;
+      color: #949494;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 23px;
+      margin-left: 100px;
+      padding-top: 10px;
+    }
+
+    .selected-section {
+      width: 475px;
+      padding: 20px 0 30px 0  ;
+      border-bottom: 1px solid #E7E7E7;
+      margin-left: 100px;
+      margin-bottom: 15px;
+    }
+
+    .selected-settings {
+      color: #000000;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+    }
+
+    .settings-text {
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 23px;
+    }
+
+    .check {
+      display:inline-block;
+      margin: 0 8px 4px 0;
+    }
+
+    .check::after {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 8px;
+      border: solid #000000;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .websites {
+      margin-left: 100px;
+      width: 320px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .website-checkbox {
+      padding: 10px;
+      border-radius: 3px;
+      color: #2B3774;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 23px;
+      flex: 1 1 39%;
+      margin: 0 10px 0 -10px;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .website-checkbox input[type="checkbox"] {
+      opacity: 0.00000001;
+      position: absolute;
+      z-index: 50;
+      cursor: pointer;
+      width: 38%;
+      height: 28px;
+    }
+
+    .website-checkbox label {
+      position: relative;
+    }
+
+    .website-checkbox label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 8px 4px 4px 4px;
+      width: 18px;
+      height: 18px;
+      transition: transform 0.28s ease;
+      border-radius: 5px;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 3px 4px 0 rgba(0,0,0,0.1);
+    }
+
+    .website-checkbox label:after {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 3px;
+      border-bottom: 2px solid #007359;
+      border-left: 2px solid #286D3F;
+      -webkit-transform: rotate(-45deg) scale(0);
+      transform: rotate(-45deg) scale(0);
+      transition: transform ease 0.25s;
+      will-change: transform;
+      position: absolute;
+      top: 15px;
+      left: 9px;
+    }
+
+    .website-checkbox input[type="checkbox"]:checked ~ label::before {
+      color: #286D3F;
+      border: 1px solid #286D3F;
+      box-shadow: 0 3px 4px 0 rgba(0,0,0,0.1);
+    }
+
+    .website-checkbox input[type="checkbox"]:checked ~ label::after {
+      -webkit-transform: rotate(-45deg) scale(1);
+      transform: rotate(-45deg) scale(1);
+    }
+
+    .website-checkbox input[type="checkbox"]:checked ~ .website-checkbox {
+      background-color: #96D8A5;
+    }
+
+    .website-checkbox label {
+      min-height: 34px;
+      padding-left: 40px;
+      margin-bottom: 0;
+      margin-left: 0;
+      cursor: pointer;
+      vertical-align: sub;
+      display: flex;
+      align-items: center;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 23px;
+    }
+
+    .website-checkbox label span {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    .survey-checkbox input[type="checkbox"]:focus + label::before {
+      outline: 0;
+    }
+
+    label {
+      font-weight: 400;
+      margin-left: 10px;
+      font-size: 16px;
+      color: #808080;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    .second-page-checkbox {
+      margin-left: 100px
+    }
+
+    .button {
+      height: 43px;
+      border-radius: 24px;
+      background-color: #0037F6;
+      color: #FFFFFF;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:disabled,
+    button[disabled]{
+      opacity: 0.5;
+    }
+
+    .last-page-container {
+      margin: 50px;
+      display: none;
+    }
+
+    .title {
+      height: 46px;
+      color: #000000;
+      font-size: 36px;
+      font-weight: 300;
+      letter-spacing: -1.5px;
+      line-height: 46px;
+      display: flex;
+    }
+
+    .title > .thinking-img {
+      width: 36px;
+      padding-right: 30px;
+    }
+
+    .title > span {
+      border-left: 1px solid #E7E7E7;
+      padding-left: 30px;
+    }
+
+    .first-text {
+      width: 400px;
+      margin-left: 100px;
+      color: #949494;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 23px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .new-setting {
+      font-weight: 600;
+    }
+
+    .icon-instruction {
+      display: flex;
+    }
+
+    .ext-setting {
+      width: 335px;
+      margin-left: 80px;
+    }
+
+    .ext-tab {
+      width: 259px;
+      margin-left: 150px;
+    }
+
+    .arrow-img {
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 316px;
+    }
+
+    .icon-instruction {
+      padding-top: 5px;
+    }
+
+    .steps {
+      width: 227px;
+      color: #000000;
+      font-size: 15px;
+      letter-spacing: 0;
+      line-height: 24px;
+      margin: 19px 0;
+    }
+
+    .first-step {
+      padding-bottom: 30px;
+    }
+
+    .tutorial-gif {
+      width: 485px;
+      height: 400px;
+      margin-left: 100px;
+    }</style></head><body><script src="walkThroughScript.js"></script><div class="first-page-container" id="firstPage"><div class="title"><img class="intro-img" src="images/intro.svg"/><span>Welcome to Fakespot</span></div><div class="first-text">Before we set up the extension, here is a quick 20-second intro on how Fakespot works.</div><img class="tutorial-gif"/><div class="button" id="agreedSetting">Now, let's get you set up.</div><div class="default close-window">No thanks, I prefer the default settings.</div></div><div class="second-page-container" id="secondPage"><div class="title"><img class="thinking-img" src="images/thinking.svg"/><span>What would you like us to display?</span></div><div class="first-text">Fakespot can display information on reviews, ratings, sellers, and much more.</div><div class="website-checkbox second-page-checkbox active-row"><input class="input-checkbox active grade-checkbox" type="checkbox" id="firstOption" checked="checked"> <label class="setting-text">Do you want to see fake review analyses for products?</label></div><div class="website-checkbox second-page-checkbox"><input class="input-checkbox grade-checkbox" type="checkbox" id="secondOption"> <label class="setting-text">Do you want to see Fakespot adjusted star ratings?</label></div><div class="website-checkbox second-page-checkbox active-row"><input class="input-checkbox active" type="checkbox" id="thirdOption" checked="checked"> <label class="setting-text">Do you want to see reliable seller analyses (Fakespot Guard) for products?</label></div><div class="website-checkbox second-page-checkbox active-row"><input class="input-checkbox active" type="checkbox" id="fourthOption" checked="checked"> <label class="setting-text">Do you want to see better prices and offers for products?</label></div><div class="website-checkbox second-page-checkbox active-row"><input class="input-checkbox active" type="checkbox" id="fifthOption" checked="checked"> <label class="setting-text">Do you want to see Fakespot review highlights for products?</label></div><button class="button" id="secondButton" style="width: 138px; margin: 30px 0 20px 100px;">Continue</button><div class="current-page">Step 1 of 2</div></div><div class="third-page-container" id="thirdPage"><div class="title"><img class="thinking-img" src="images/thinking.svg"/><span>Alright, and on what websites?</span></div><div class="first-text">We would just like to know what websites you would like to do the following on:</div><div class="selected-section" id="settings"></div><div class="websites"><div class="website-checkbox"><input class="third-page-checkbox" type="checkbox" id="amazonOptions" name="amazon" checked="checked"> <label>Amazon</label></div><div class="website-checkbox"><input class="third-page-checkbox" type="checkbox" id="walmartOptions" name="walmart" checked="checked"> <label>Walmart</label></div><div class="website-checkbox"><input class="third-page-checkbox" type="checkbox" id="sephoraOptions" name="sephora" checked="checked"> <label>Sephora</label></div><div class="website-checkbox"><input class="third-page-checkbox" type="checkbox" id="bestbuyOptions" name="bestbuy" checked="checked"> <label>Best Buy</label></div><div class="website-checkbox"><input class="third-page-checkbox" type="checkbox" id="googleOptions" name="google" checked="checked"> <label>Google</label></div></div><button class="button" id="thirdButton" style="width: 138px; margin: 30px 0 20px 100px;">Finish</button><div class="current-page">Step 2 of 2</div></div><div class="last-page-container" id="lastPage"><div class="title"><img class="thinking-img" src="images/last.svg"/><span>You're set!</span></div><div class="first-text">Fakespot is now configured as you wanted. <span class="new-setting">To wrap up, here is a quick walkthrough on how to display Fakespot in your chrome bar:</span></div><img class="ext-tab" src="images/ext-tab.png"> <img class="arrow-img" src="images/arrow-up.svg"><div class="icon-instruction"><img class="ext-setting" src="images/ext-setting.png"><div class="steps"><div class="first-step">Step 1: Click on the puzzle piece icon</div><div class="second-step">Step 2: Click the pin icon next to Fakespot as shown here</div></div></div><button class="button close-window" style="width: 138px; margin: 30px 0 20px 100px;">Close</button></div></body></html>

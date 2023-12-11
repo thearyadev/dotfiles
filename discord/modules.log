@@ -1,0 +1,723 @@
+2023-12-05T14:48:57.794Z [Modules] Modules initializing
+2023-12-05T14:48:57.794Z [Modules] Distribution: remote
+2023-12-05T14:48:57.794Z [Modules] Host updates: enabled
+2023-12-05T14:48:57.795Z [Modules] Module updates: enabled
+2023-12-05T14:48:57.795Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T14:48:57.795Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T14:48:57.795Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T14:48:57.922Z [Modules] Bootstrapping...
+2023-12-05T14:48:57.922Z [Modules] Installing discord_desktop_core@0 from /opt/discord/resources/bootstrap/discord_desktop_core.zip
+2023-12-05T14:48:57.925Z [Modules] Failed installing discord_desktop_core@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_desktop_core.zip'
+2023-12-05T14:48:57.926Z [Modules] Installing discord_erlpack@0 from /opt/discord/resources/bootstrap/discord_erlpack.zip
+2023-12-05T14:48:57.927Z [Modules] Failed installing discord_erlpack@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_erlpack.zip'
+2023-12-05T14:48:57.928Z [Modules] Installing discord_spellcheck@0 from /opt/discord/resources/bootstrap/discord_spellcheck.zip
+2023-12-05T14:48:57.929Z [Modules] Failed installing discord_spellcheck@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_spellcheck.zip'
+2023-12-05T14:48:57.929Z [Modules] Installing discord_utils@0 from /opt/discord/resources/bootstrap/discord_utils.zip
+2023-12-05T14:48:57.931Z [Modules] Failed installing discord_utils@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_utils.zip'
+2023-12-05T14:48:57.932Z [Modules] Installing discord_voice@0 from /opt/discord/resources/bootstrap/discord_voice.zip
+2023-12-05T14:48:57.933Z [Modules] Failed installing discord_voice@0: Error: ENOENT: no such file or directory, open '/opt/discord/resources/bootstrap/discord_voice.zip'
+2023-12-05T14:48:57.933Z [Modules] Finished module installations. [success: 0] [failure: 5]
+2023-12-05T14:48:57.933Z [Modules] Checking for host updates.
+2023-12-05T14:48:58.078Z [Modules] Host is up to date.
+2023-12-05T14:48:58.078Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T14:48:58.110Z [Modules] Module update available: discord_desktop_core@1 [installed: 0]
+2023-12-05T14:48:58.110Z [Modules] Module update available: discord_erlpack@1 [installed: 0]
+2023-12-05T14:48:58.110Z [Modules] Module update available: discord_spellcheck@1 [installed: 0]
+2023-12-05T14:48:58.110Z [Modules] Module update available: discord_utils@1 [installed: 0]
+2023-12-05T14:48:58.110Z [Modules] Module update available: discord_voice@1 [installed: 0]
+2023-12-05T14:48:58.110Z [Modules] Fetching discord_desktop_core@1 from https://discord.com/api/modules/stable/discord_desktop_core/1
+2023-12-05T14:48:58.110Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip
+2023-12-05T14:48:58.233Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 2%
+2023-12-05T14:48:58.238Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 4%
+2023-12-05T14:48:58.239Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 7%
+2023-12-05T14:48:58.241Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 10%
+2023-12-05T14:48:58.242Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 11%
+2023-12-05T14:48:58.244Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 12%
+2023-12-05T14:48:58.245Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 20%
+2023-12-05T14:48:58.247Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 25%
+2023-12-05T14:48:58.249Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 34%
+2023-12-05T14:48:58.250Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 42%
+2023-12-05T14:48:58.252Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 51%
+2023-12-05T14:48:58.253Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 57%
+2023-12-05T14:48:58.255Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 65%
+2023-12-05T14:48:58.256Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 68%
+2023-12-05T14:48:58.257Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 75%
+2023-12-05T14:48:58.258Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 81%
+2023-12-05T14:48:58.259Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 86%
+2023-12-05T14:48:58.260Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 95%
+2023-12-05T14:48:58.262Z [Modules] Streaming discord_desktop_core@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip: 100%
+2023-12-05T14:48:58.265Z [Modules] Fetching discord_erlpack@1 from https://discord.com/api/modules/stable/discord_erlpack/1
+2023-12-05T14:48:58.265Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip
+2023-12-05T14:48:58.362Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 3%
+2023-12-05T14:48:58.365Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 21%
+2023-12-05T14:48:58.366Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 30%
+2023-12-05T14:48:58.367Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 37%
+2023-12-05T14:48:58.368Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 46%
+2023-12-05T14:48:58.370Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 52%
+2023-12-05T14:48:58.371Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 59%
+2023-12-05T14:48:58.372Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 69%
+2023-12-05T14:48:58.373Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 72%
+2023-12-05T14:48:58.374Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 81%
+2023-12-05T14:48:58.375Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 86%
+2023-12-05T14:48:58.377Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 87%
+2023-12-05T14:48:58.380Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 90%
+2023-12-05T14:48:58.381Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 94%
+2023-12-05T14:48:58.382Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 99%
+2023-12-05T14:48:58.387Z [Modules] Streaming discord_erlpack@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip: 100%
+2023-12-05T14:48:58.389Z [Modules] Fetching discord_spellcheck@1 from https://discord.com/api/modules/stable/discord_spellcheck/1
+2023-12-05T14:48:58.390Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip
+2023-12-05T14:48:58.500Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 1%
+2023-12-05T14:48:58.501Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 3%
+2023-12-05T14:48:58.503Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 4%
+2023-12-05T14:48:58.504Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 5%
+2023-12-05T14:48:58.505Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 7%
+2023-12-05T14:48:58.506Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 8%
+2023-12-05T14:48:58.507Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 9%
+2023-12-05T14:48:58.509Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 11%
+2023-12-05T14:48:58.510Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 12%
+2023-12-05T14:48:58.511Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 13%
+2023-12-05T14:48:58.512Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 14%
+2023-12-05T14:48:58.513Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 15%
+2023-12-05T14:48:58.514Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 16%
+2023-12-05T14:48:58.516Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 18%
+2023-12-05T14:48:58.517Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 19%
+2023-12-05T14:48:58.518Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 20%
+2023-12-05T14:48:58.519Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 22%
+2023-12-05T14:48:58.521Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 23%
+2023-12-05T14:48:58.522Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 25%
+2023-12-05T14:48:58.523Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 26%
+2023-12-05T14:48:58.524Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 28%
+2023-12-05T14:48:58.525Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 29%
+2023-12-05T14:48:58.526Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 30%
+2023-12-05T14:48:58.528Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 32%
+2023-12-05T14:48:58.529Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 33%
+2023-12-05T14:48:58.530Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 34%
+2023-12-05T14:48:58.531Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 36%
+2023-12-05T14:48:58.532Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 37%
+2023-12-05T14:48:58.533Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 38%
+2023-12-05T14:48:58.534Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 39%
+2023-12-05T14:48:58.535Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 41%
+2023-12-05T14:48:58.537Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 42%
+2023-12-05T14:48:58.538Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 43%
+2023-12-05T14:48:58.539Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 44%
+2023-12-05T14:48:58.540Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 45%
+2023-12-05T14:48:58.541Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 46%
+2023-12-05T14:48:58.542Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 48%
+2023-12-05T14:48:58.542Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 49%
+2023-12-05T14:48:58.543Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 50%
+2023-12-05T14:48:58.544Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 51%
+2023-12-05T14:48:58.545Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 52%
+2023-12-05T14:48:58.546Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 53%
+2023-12-05T14:48:58.547Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 55%
+2023-12-05T14:48:58.548Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 56%
+2023-12-05T14:48:58.549Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 57%
+2023-12-05T14:48:58.550Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 58%
+2023-12-05T14:48:58.551Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 59%
+2023-12-05T14:48:58.552Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 60%
+2023-12-05T14:48:58.553Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 61%
+2023-12-05T14:48:58.554Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 62%
+2023-12-05T14:48:58.554Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 63%
+2023-12-05T14:48:58.555Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 64%
+2023-12-05T14:48:58.556Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 65%
+2023-12-05T14:48:58.557Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 66%
+2023-12-05T14:48:58.558Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 67%
+2023-12-05T14:48:58.559Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 68%
+2023-12-05T14:48:58.560Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 69%
+2023-12-05T14:48:58.560Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 70%
+2023-12-05T14:48:58.561Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 71%
+2023-12-05T14:48:58.562Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 72%
+2023-12-05T14:48:58.563Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 73%
+2023-12-05T14:48:58.564Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 74%
+2023-12-05T14:48:58.565Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 75%
+2023-12-05T14:48:58.566Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 76%
+2023-12-05T14:48:58.567Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 77%
+2023-12-05T14:48:58.568Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 78%
+2023-12-05T14:48:58.568Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 79%
+2023-12-05T14:48:58.569Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 80%
+2023-12-05T14:48:58.570Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 81%
+2023-12-05T14:48:58.571Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 82%
+2023-12-05T14:48:58.572Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 83%
+2023-12-05T14:48:58.573Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 84%
+2023-12-05T14:48:58.573Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 85%
+2023-12-05T14:48:58.574Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 86%
+2023-12-05T14:48:58.575Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 87%
+2023-12-05T14:48:58.576Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 88%
+2023-12-05T14:48:58.591Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 89%
+2023-12-05T14:48:58.592Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 90%
+2023-12-05T14:48:58.597Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 91%
+2023-12-05T14:48:58.598Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 92%
+2023-12-05T14:48:58.598Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 93%
+2023-12-05T14:48:58.606Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 94%
+2023-12-05T14:48:58.607Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 95%
+2023-12-05T14:48:58.609Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 96%
+2023-12-05T14:48:58.610Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 97%
+2023-12-05T14:48:58.611Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 98%
+2023-12-05T14:48:58.615Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 99%
+2023-12-05T14:48:58.617Z [Modules] Streaming discord_spellcheck@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip: 100%
+2023-12-05T14:48:58.619Z [Modules] Fetching discord_utils@1 from https://discord.com/api/modules/stable/discord_utils/1
+2023-12-05T14:48:58.619Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip
+2023-12-05T14:48:58.718Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 2%
+2023-12-05T14:48:58.719Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 7%
+2023-12-05T14:48:58.720Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 12%
+2023-12-05T14:48:58.722Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 17%
+2023-12-05T14:48:58.723Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 20%
+2023-12-05T14:48:58.724Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 25%
+2023-12-05T14:48:58.725Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 30%
+2023-12-05T14:48:58.726Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 34%
+2023-12-05T14:48:58.727Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 38%
+2023-12-05T14:48:58.728Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 42%
+2023-12-05T14:48:58.730Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 46%
+2023-12-05T14:48:58.731Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 51%
+2023-12-05T14:48:58.732Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 53%
+2023-12-05T14:48:58.733Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 59%
+2023-12-05T14:48:58.734Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 63%
+2023-12-05T14:48:58.735Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 65%
+2023-12-05T14:48:58.737Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 72%
+2023-12-05T14:48:58.741Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 84%
+2023-12-05T14:48:58.742Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 92%
+2023-12-05T14:48:58.744Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 96%
+2023-12-05T14:48:58.745Z [Modules] Streaming discord_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip: 100%
+2023-12-05T14:48:58.747Z [Modules] Fetching discord_voice@1 from https://discord.com/api/modules/stable/discord_voice/1
+2023-12-05T14:48:58.747Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip
+2023-12-05T14:48:58.838Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 1%
+2023-12-05T14:48:58.840Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 2%
+2023-12-05T14:48:58.842Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 3%
+2023-12-05T14:48:58.844Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 4%
+2023-12-05T14:48:58.847Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 5%
+2023-12-05T14:48:58.849Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 6%
+2023-12-05T14:48:58.851Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 7%
+2023-12-05T14:48:58.853Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 8%
+2023-12-05T14:48:58.856Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 9%
+2023-12-05T14:48:58.858Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 10%
+2023-12-05T14:48:58.859Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 11%
+2023-12-05T14:48:58.862Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 12%
+2023-12-05T14:48:58.868Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 13%
+2023-12-05T14:48:58.871Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 14%
+2023-12-05T14:48:58.876Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 15%
+2023-12-05T14:48:58.878Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 16%
+2023-12-05T14:48:58.882Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 17%
+2023-12-05T14:48:58.886Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 18%
+2023-12-05T14:48:58.897Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 19%
+2023-12-05T14:48:58.902Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 20%
+2023-12-05T14:48:58.905Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 21%
+2023-12-05T14:48:58.912Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 22%
+2023-12-05T14:48:58.914Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 23%
+2023-12-05T14:48:58.923Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 24%
+2023-12-05T14:48:58.925Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 25%
+2023-12-05T14:48:58.929Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 26%
+2023-12-05T14:48:58.931Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 27%
+2023-12-05T14:48:58.934Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 28%
+2023-12-05T14:48:58.937Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 29%
+2023-12-05T14:48:58.940Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 30%
+2023-12-05T14:48:58.942Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 31%
+2023-12-05T14:48:58.944Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 32%
+2023-12-05T14:48:58.946Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 33%
+2023-12-05T14:48:58.948Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 34%
+2023-12-05T14:48:58.950Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 35%
+2023-12-05T14:48:58.953Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 36%
+2023-12-05T14:48:58.955Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 37%
+2023-12-05T14:48:58.957Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 38%
+2023-12-05T14:48:58.959Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 39%
+2023-12-05T14:48:58.962Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 40%
+2023-12-05T14:48:58.963Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 41%
+2023-12-05T14:48:58.974Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 42%
+2023-12-05T14:48:58.989Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 43%
+2023-12-05T14:48:58.995Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 44%
+2023-12-05T14:48:58.997Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 45%
+2023-12-05T14:48:59.000Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 46%
+2023-12-05T14:48:59.001Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 47%
+2023-12-05T14:48:59.004Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 48%
+2023-12-05T14:48:59.006Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 49%
+2023-12-05T14:48:59.008Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 50%
+2023-12-05T14:48:59.010Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 51%
+2023-12-05T14:48:59.012Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 52%
+2023-12-05T14:48:59.015Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 53%
+2023-12-05T14:48:59.018Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 54%
+2023-12-05T14:48:59.021Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 55%
+2023-12-05T14:48:59.024Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 56%
+2023-12-05T14:48:59.051Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 57%
+2023-12-05T14:48:59.053Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 58%
+2023-12-05T14:48:59.072Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 59%
+2023-12-05T14:48:59.074Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 60%
+2023-12-05T14:48:59.081Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 61%
+2023-12-05T14:48:59.083Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 62%
+2023-12-05T14:48:59.085Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 63%
+2023-12-05T14:48:59.091Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 64%
+2023-12-05T14:48:59.098Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 65%
+2023-12-05T14:48:59.101Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 66%
+2023-12-05T14:48:59.103Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 67%
+2023-12-05T14:48:59.105Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 68%
+2023-12-05T14:48:59.107Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 69%
+2023-12-05T14:48:59.114Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 70%
+2023-12-05T14:48:59.117Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 71%
+2023-12-05T14:48:59.119Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 72%
+2023-12-05T14:48:59.121Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 73%
+2023-12-05T14:48:59.123Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 74%
+2023-12-05T14:48:59.125Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 75%
+2023-12-05T14:48:59.131Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 76%
+2023-12-05T14:48:59.137Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 77%
+2023-12-05T14:48:59.150Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 78%
+2023-12-05T14:48:59.156Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 79%
+2023-12-05T14:48:59.158Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 80%
+2023-12-05T14:48:59.167Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 81%
+2023-12-05T14:48:59.169Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 82%
+2023-12-05T14:48:59.172Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 83%
+2023-12-05T14:48:59.174Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 84%
+2023-12-05T14:48:59.176Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 85%
+2023-12-05T14:48:59.178Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 86%
+2023-12-05T14:48:59.180Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 87%
+2023-12-05T14:48:59.182Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 88%
+2023-12-05T14:48:59.185Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 89%
+2023-12-05T14:48:59.188Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 90%
+2023-12-05T14:48:59.192Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 91%
+2023-12-05T14:48:59.194Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 92%
+2023-12-05T14:48:59.197Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 93%
+2023-12-05T14:48:59.199Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 94%
+2023-12-05T14:48:59.201Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 95%
+2023-12-05T14:48:59.203Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 96%
+2023-12-05T14:48:59.213Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 97%
+2023-12-05T14:48:59.216Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 98%
+2023-12-05T14:48:59.221Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 99%
+2023-12-05T14:48:59.225Z [Modules] Streaming discord_voice@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip: 100%
+2023-12-05T14:48:59.226Z [Modules] Finished module downloads. [success: 5] [failure: 0]
+2023-12-05T14:48:59.227Z [Modules] Installing updates...
+2023-12-05T14:48:59.227Z [Modules] Installing discord_desktop_core@1 from /home/arya/.config/discord/0.0.36/modules/pending/discord_desktop_core-1.zip
+2023-12-05T14:48:59.306Z [Modules] Installing discord_erlpack@1 from /home/arya/.config/discord/0.0.36/modules/pending/discord_erlpack-1.zip
+2023-12-05T14:48:59.357Z [Modules] Installing discord_spellcheck@1 from /home/arya/.config/discord/0.0.36/modules/pending/discord_spellcheck-1.zip
+2023-12-05T14:48:59.949Z [Modules] Installing discord_utils@1 from /home/arya/.config/discord/0.0.36/modules/pending/discord_utils-1.zip
+2023-12-05T14:49:00.141Z [Modules] Installing discord_voice@1 from /home/arya/.config/discord/0.0.36/modules/pending/discord_voice-1.zip
+2023-12-05T14:49:00.922Z [Modules] Finished module installations. [success: 5] [failure: 0]
+2023-12-05T14:49:00.922Z [Modules] Checking for host updates.
+2023-12-05T14:49:01.036Z [Modules] Host is up to date.
+2023-12-05T14:49:01.036Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T14:49:01.039Z [Modules] No module updates available.
+2023-12-05T14:49:02.076Z [Modules] Starting to install discord_krisp...
+2023-12-05T14:49:02.076Z [Modules] Fetching discord_krisp@1 from https://discord.com/api/modules/stable/discord_krisp/1
+2023-12-05T14:49:02.076Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip
+2023-12-05T14:49:02.082Z [Modules] Starting to install discord_game_utils...
+2023-12-05T14:49:02.176Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 1%
+2023-12-05T14:49:02.178Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 2%
+2023-12-05T14:49:02.180Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 3%
+2023-12-05T14:49:02.182Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 4%
+2023-12-05T14:49:02.184Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 5%
+2023-12-05T14:49:02.186Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 6%
+2023-12-05T14:49:02.188Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 7%
+2023-12-05T14:49:02.190Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 8%
+2023-12-05T14:49:02.192Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 9%
+2023-12-05T14:49:02.194Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 10%
+2023-12-05T14:49:02.195Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 11%
+2023-12-05T14:49:02.198Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 12%
+2023-12-05T14:49:02.200Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 13%
+2023-12-05T14:49:02.201Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 14%
+2023-12-05T14:49:02.203Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 15%
+2023-12-05T14:49:02.205Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 16%
+2023-12-05T14:49:02.208Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 17%
+2023-12-05T14:49:02.209Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 18%
+2023-12-05T14:49:02.211Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 19%
+2023-12-05T14:49:02.213Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 20%
+2023-12-05T14:49:02.215Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 21%
+2023-12-05T14:49:02.217Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 22%
+2023-12-05T14:49:02.219Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 23%
+2023-12-05T14:49:02.221Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 24%
+2023-12-05T14:49:02.223Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 25%
+2023-12-05T14:49:02.225Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 26%
+2023-12-05T14:49:02.227Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 27%
+2023-12-05T14:49:02.229Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 28%
+2023-12-05T14:49:02.231Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 29%
+2023-12-05T14:49:02.233Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 30%
+2023-12-05T14:49:02.235Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 31%
+2023-12-05T14:49:02.237Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 32%
+2023-12-05T14:49:02.240Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 33%
+2023-12-05T14:49:02.241Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 34%
+2023-12-05T14:49:02.250Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 35%
+2023-12-05T14:49:02.251Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 36%
+2023-12-05T14:49:02.251Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 37%
+2023-12-05T14:49:02.252Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 38%
+2023-12-05T14:49:02.255Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 39%
+2023-12-05T14:49:02.260Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 40%
+2023-12-05T14:49:02.260Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 41%
+2023-12-05T14:49:02.261Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 42%
+2023-12-05T14:49:02.263Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 43%
+2023-12-05T14:49:02.264Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 44%
+2023-12-05T14:49:02.266Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 45%
+2023-12-05T14:49:02.268Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 46%
+2023-12-05T14:49:02.270Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 47%
+2023-12-05T14:49:02.272Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 48%
+2023-12-05T14:49:02.275Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 49%
+2023-12-05T14:49:02.276Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 50%
+2023-12-05T14:49:02.278Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 51%
+2023-12-05T14:49:02.288Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 52%
+2023-12-05T14:49:02.288Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 53%
+2023-12-05T14:49:02.289Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 54%
+2023-12-05T14:49:02.289Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 55%
+2023-12-05T14:49:02.290Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 56%
+2023-12-05T14:49:02.291Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 57%
+2023-12-05T14:49:02.294Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 58%
+2023-12-05T14:49:02.296Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 59%
+2023-12-05T14:49:02.298Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 60%
+2023-12-05T14:49:02.300Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 61%
+2023-12-05T14:49:02.302Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 62%
+2023-12-05T14:49:02.306Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 63%
+2023-12-05T14:49:02.308Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 64%
+2023-12-05T14:49:02.309Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 65%
+2023-12-05T14:49:02.311Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 66%
+2023-12-05T14:49:02.314Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 67%
+2023-12-05T14:49:02.319Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 68%
+2023-12-05T14:49:02.322Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 69%
+2023-12-05T14:49:02.390Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 70%
+2023-12-05T14:49:02.392Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 71%
+2023-12-05T14:49:02.409Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 72%
+2023-12-05T14:49:02.423Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 73%
+2023-12-05T14:49:02.438Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 74%
+2023-12-05T14:49:02.439Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 75%
+2023-12-05T14:49:02.440Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 76%
+2023-12-05T14:49:02.441Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 77%
+2023-12-05T14:49:02.442Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 78%
+2023-12-05T14:49:02.442Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 79%
+2023-12-05T14:49:02.443Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 80%
+2023-12-05T14:49:02.444Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 81%
+2023-12-05T14:49:02.444Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 82%
+2023-12-05T14:49:02.445Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 83%
+2023-12-05T14:49:02.446Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 84%
+2023-12-05T14:49:02.446Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 85%
+2023-12-05T14:49:02.447Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 86%
+2023-12-05T14:49:02.448Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 87%
+2023-12-05T14:49:02.448Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 88%
+2023-12-05T14:49:02.449Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 90%
+2023-12-05T14:49:02.449Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 91%
+2023-12-05T14:49:02.450Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 92%
+2023-12-05T14:49:02.450Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 93%
+2023-12-05T14:49:02.451Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 94%
+2023-12-05T14:49:02.451Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 95%
+2023-12-05T14:49:02.452Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 97%
+2023-12-05T14:49:02.453Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 98%
+2023-12-05T14:49:02.455Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 99%
+2023-12-05T14:49:02.457Z [Modules] Streaming discord_krisp@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip: 100%
+2023-12-05T14:49:02.458Z [Modules] Fetching discord_game_utils@1 from https://discord.com/api/modules/stable/discord_game_utils/1
+2023-12-05T14:49:02.458Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip
+2023-12-05T14:49:02.458Z [Modules] Installing discord_krisp@1 from /home/arya/.config/discord/0.0.36/modules/pending/discord_krisp-1.zip
+2023-12-05T14:49:02.554Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 2%
+2023-12-05T14:49:02.555Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 6%
+2023-12-05T14:49:02.555Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 9%
+2023-12-05T14:49:02.557Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 11%
+2023-12-05T14:49:02.557Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 16%
+2023-12-05T14:49:02.557Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 17%
+2023-12-05T14:49:02.558Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 20%
+2023-12-05T14:49:02.558Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 22%
+2023-12-05T14:49:02.558Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 25%
+2023-12-05T14:49:02.559Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 27%
+2023-12-05T14:49:02.559Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 29%
+2023-12-05T14:49:02.560Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 31%
+2023-12-05T14:49:02.561Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 34%
+2023-12-05T14:49:02.561Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 35%
+2023-12-05T14:49:02.561Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 38%
+2023-12-05T14:49:02.562Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 40%
+2023-12-05T14:49:02.562Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 43%
+2023-12-05T14:49:02.563Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 46%
+2023-12-05T14:49:02.564Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 48%
+2023-12-05T14:49:02.564Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 51%
+2023-12-05T14:49:02.564Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 52%
+2023-12-05T14:49:02.565Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 55%
+2023-12-05T14:49:02.566Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 57%
+2023-12-05T14:49:02.566Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 59%
+2023-12-05T14:49:02.566Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 61%
+2023-12-05T14:49:02.567Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 64%
+2023-12-05T14:49:02.567Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 65%
+2023-12-05T14:49:02.568Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 68%
+2023-12-05T14:49:02.568Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 70%
+2023-12-05T14:49:02.569Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 72%
+2023-12-05T14:49:02.569Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 74%
+2023-12-05T14:49:02.570Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 77%
+2023-12-05T14:49:02.570Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 78%
+2023-12-05T14:49:02.570Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 81%
+2023-12-05T14:49:02.571Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 83%
+2023-12-05T14:49:02.571Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 85%
+2023-12-05T14:49:02.572Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 87%
+2023-12-05T14:49:02.573Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 90%
+2023-12-05T14:49:02.573Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 91%
+2023-12-05T14:49:02.573Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 94%
+2023-12-05T14:49:02.574Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 96%
+2023-12-05T14:49:02.574Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 98%
+2023-12-05T14:49:02.576Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 99%
+2023-12-05T14:49:02.578Z [Modules] Streaming discord_game_utils@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip: 100%
+2023-12-05T14:49:02.579Z [Modules] Finished module downloads. [success: 2] [failure: 0]
+2023-12-05T14:49:02.693Z [Modules] Checking for host updates.
+2023-12-05T14:49:02.765Z [Modules] Host is up to date.
+2023-12-05T14:49:02.766Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T14:49:02.766Z [Modules] Starting to install discord_rpc...
+2023-12-05T14:49:02.766Z [Modules] Fetching discord_rpc@1 from https://discord.com/api/modules/stable/discord_rpc/1
+2023-12-05T14:49:02.766Z [Modules] Streaming discord_rpc@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_rpc-1.zip
+2023-12-05T14:49:02.775Z [Modules] No module updates available.
+2023-12-05T14:49:02.867Z [Modules] Streaming discord_rpc@1 to /home/arya/.config/discord/0.0.36/modules/pending/discord_rpc-1.zip: 100%
+2023-12-05T14:49:02.868Z [Modules] Finished module downloads. [success: 1] [failure: 0]
+2023-12-05T14:49:02.877Z [Modules] Installing discord_game_utils@1 from /home/arya/.config/discord/0.0.36/modules/pending/discord_game_utils-1.zip
+2023-12-05T14:49:02.922Z [Modules] Installing discord_rpc@1 from /home/arya/.config/discord/0.0.36/modules/pending/discord_rpc-1.zip
+2023-12-05T14:49:02.932Z [Modules] Finished module installations. [success: 3] [failure: 0]
+2023-12-05T15:32:14.282Z [Modules] Modules initializing
+2023-12-05T15:32:14.282Z [Modules] Distribution: remote
+2023-12-05T15:32:14.282Z [Modules] Host updates: enabled
+2023-12-05T15:32:14.282Z [Modules] Module updates: enabled
+2023-12-05T15:32:14.283Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T15:32:14.283Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T15:32:14.283Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T15:32:14.427Z [Modules] No updates to install
+2023-12-05T15:32:14.427Z [Modules] Checking for host updates.
+2023-12-05T15:32:14.646Z [Modules] Host is up to date.
+2023-12-05T15:32:14.646Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:32:14.687Z [Modules] No module updates available.
+2023-12-05T15:32:17.468Z [Modules] Checking for host updates.
+2023-12-05T15:32:17.605Z [Modules] Host is up to date.
+2023-12-05T15:32:17.605Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:32:17.609Z [Modules] No module updates available.
+2023-12-05T15:34:26.806Z [Modules] Modules initializing
+2023-12-05T15:34:26.807Z [Modules] Distribution: remote
+2023-12-05T15:34:26.807Z [Modules] Host updates: enabled
+2023-12-05T15:34:26.807Z [Modules] Module updates: enabled
+2023-12-05T15:34:26.807Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T15:34:26.807Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T15:34:26.807Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T15:34:26.947Z [Modules] No updates to install
+2023-12-05T15:34:26.947Z [Modules] Checking for host updates.
+2023-12-05T15:34:27.099Z [Modules] Host is up to date.
+2023-12-05T15:34:27.099Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:34:27.103Z [Modules] No module updates available.
+2023-12-05T15:34:28.723Z [Modules] Checking for host updates.
+2023-12-05T15:34:28.796Z [Modules] Host is up to date.
+2023-12-05T15:34:28.797Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:34:28.800Z [Modules] No module updates available.
+2023-12-05T15:38:13.352Z [Modules] Modules initializing
+2023-12-05T15:38:13.352Z [Modules] Distribution: remote
+2023-12-05T15:38:13.352Z [Modules] Host updates: enabled
+2023-12-05T15:38:13.352Z [Modules] Module updates: enabled
+2023-12-05T15:38:13.352Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T15:38:13.353Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T15:38:13.353Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T15:38:13.493Z [Modules] No updates to install
+2023-12-05T15:38:13.493Z [Modules] Checking for host updates.
+2023-12-05T15:38:13.607Z [Modules] Host is up to date.
+2023-12-05T15:38:13.607Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:38:13.626Z [Modules] No module updates available.
+2023-12-05T15:38:15.279Z [Modules] Checking for host updates.
+2023-12-05T15:38:15.357Z [Modules] Host is up to date.
+2023-12-05T15:38:15.357Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:38:15.361Z [Modules] No module updates available.
+2023-12-05T15:40:00.596Z [Modules] Modules initializing
+2023-12-05T15:40:00.596Z [Modules] Distribution: remote
+2023-12-05T15:40:00.596Z [Modules] Host updates: enabled
+2023-12-05T15:40:00.596Z [Modules] Module updates: enabled
+2023-12-05T15:40:00.596Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T15:40:00.596Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T15:40:00.597Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T15:40:00.739Z [Modules] No updates to install
+2023-12-05T15:40:00.740Z [Modules] Checking for host updates.
+2023-12-05T15:40:00.917Z [Modules] Host is up to date.
+2023-12-05T15:40:00.917Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:40:01.007Z [Modules] No module updates available.
+2023-12-05T15:40:02.753Z [Modules] Checking for host updates.
+2023-12-05T15:40:02.842Z [Modules] Host is up to date.
+2023-12-05T15:40:02.842Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:40:02.845Z [Modules] No module updates available.
+2023-12-05T15:41:12.951Z [Modules] Modules initializing
+2023-12-05T15:41:12.951Z [Modules] Distribution: remote
+2023-12-05T15:41:12.951Z [Modules] Host updates: enabled
+2023-12-05T15:41:12.951Z [Modules] Module updates: enabled
+2023-12-05T15:41:12.951Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T15:41:12.951Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T15:41:12.951Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T15:41:13.099Z [Modules] No updates to install
+2023-12-05T15:41:13.100Z [Modules] Checking for host updates.
+2023-12-05T15:41:13.334Z [Modules] Host is up to date.
+2023-12-05T15:41:13.334Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:41:13.339Z [Modules] No module updates available.
+2023-12-05T15:41:15.070Z [Modules] Checking for host updates.
+2023-12-05T15:41:15.164Z [Modules] Host is up to date.
+2023-12-05T15:41:15.165Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T15:41:15.171Z [Modules] No module updates available.
+2023-12-05T16:18:49.025Z [Modules] Modules initializing
+2023-12-05T16:18:49.025Z [Modules] Distribution: remote
+2023-12-05T16:18:49.025Z [Modules] Host updates: enabled
+2023-12-05T16:18:49.025Z [Modules] Module updates: enabled
+2023-12-05T16:18:49.025Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T16:18:49.026Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T16:18:49.026Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T16:18:49.163Z [Modules] No updates to install
+2023-12-05T16:18:49.164Z [Modules] Checking for host updates.
+2023-12-05T16:18:49.327Z [Modules] Host is up to date.
+2023-12-05T16:18:49.328Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T16:18:49.351Z [Modules] No module updates available.
+2023-12-05T16:18:50.989Z [Modules] Checking for host updates.
+2023-12-05T16:18:51.073Z [Modules] Host is up to date.
+2023-12-05T16:18:51.073Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T16:18:51.076Z [Modules] No module updates available.
+2023-12-05T16:27:45.886Z [Modules] Modules initializing
+2023-12-05T16:27:45.886Z [Modules] Distribution: remote
+2023-12-05T16:27:45.886Z [Modules] Host updates: enabled
+2023-12-05T16:27:45.887Z [Modules] Module updates: enabled
+2023-12-05T16:27:45.887Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T16:27:45.887Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T16:27:45.887Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T16:27:46.017Z [Modules] No updates to install
+2023-12-05T16:27:46.018Z [Modules] Checking for host updates.
+2023-12-05T16:27:46.162Z [Modules] Host is up to date.
+2023-12-05T16:27:46.163Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T16:27:46.190Z [Modules] No module updates available.
+2023-12-05T16:27:47.802Z [Modules] Checking for host updates.
+2023-12-05T16:27:47.892Z [Modules] Host is up to date.
+2023-12-05T16:27:47.892Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T16:27:47.896Z [Modules] No module updates available.
+2023-12-05T17:27:47.806Z [Modules] Checking for host updates.
+2023-12-05T17:27:47.905Z [Modules] Host is up to date.
+2023-12-05T17:27:47.905Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T17:27:47.939Z [Modules] No module updates available.
+2023-12-05T18:18:54.177Z [Modules] Modules initializing
+2023-12-05T18:18:54.177Z [Modules] Distribution: remote
+2023-12-05T18:18:54.177Z [Modules] Host updates: enabled
+2023-12-05T18:18:54.177Z [Modules] Module updates: enabled
+2023-12-05T18:18:54.177Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T18:18:54.178Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T18:18:54.178Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T18:18:54.354Z [Modules] No updates to install
+2023-12-05T18:18:54.355Z [Modules] Checking for host updates.
+2023-12-05T18:18:54.494Z [Modules] Host is up to date.
+2023-12-05T18:18:54.495Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T18:18:54.519Z [Modules] No module updates available.
+2023-12-05T18:18:56.241Z [Modules] Checking for host updates.
+2023-12-05T18:18:56.331Z [Modules] Host is up to date.
+2023-12-05T18:18:56.331Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T18:18:56.334Z [Modules] No module updates available.
+2023-12-05T20:09:44.895Z [Modules] Modules initializing
+2023-12-05T20:09:44.895Z [Modules] Distribution: remote
+2023-12-05T20:09:44.895Z [Modules] Host updates: enabled
+2023-12-05T20:09:44.895Z [Modules] Module updates: enabled
+2023-12-05T20:09:44.895Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T20:09:44.895Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T20:09:44.895Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T20:09:45.074Z [Modules] No updates to install
+2023-12-05T20:09:45.074Z [Modules] Checking for host updates.
+2023-12-05T20:09:45.220Z [Modules] Host update is available. Manual update required!
+2023-12-05T20:11:53.600Z [Modules] Modules initializing
+2023-12-05T20:11:53.600Z [Modules] Distribution: remote
+2023-12-05T20:11:53.600Z [Modules] Host updates: disabled
+2023-12-05T20:11:53.600Z [Modules] Module updates: enabled
+2023-12-05T20:11:53.600Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-05T20:11:53.600Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-05T20:11:53.600Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-05T20:11:53.745Z [Modules] No updates to install
+2023-12-05T20:11:53.746Z [Modules] Host is up to date.
+2023-12-05T20:11:53.746Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T20:11:53.824Z [Modules] No module updates available.
+2023-12-05T20:11:55.574Z [Modules] Host is up to date.
+2023-12-05T20:11:55.574Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-05T20:11:55.578Z [Modules] No module updates available.
+2023-12-06T00:12:19.022Z [Modules] Modules initializing
+2023-12-06T00:12:19.022Z [Modules] Distribution: remote
+2023-12-06T00:12:19.022Z [Modules] Host updates: disabled
+2023-12-06T00:12:19.022Z [Modules] Module updates: enabled
+2023-12-06T00:12:19.023Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-06T00:12:19.023Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-06T00:12:19.023Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-06T00:12:19.198Z [Modules] No updates to install
+2023-12-06T00:12:19.199Z [Modules] Host is up to date.
+2023-12-06T00:12:19.199Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-06T00:12:19.351Z [Modules] No module updates available.
+2023-12-06T00:12:22.039Z [Modules] Host is up to date.
+2023-12-06T00:12:22.039Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-06T00:12:22.043Z [Modules] No module updates available.
+2023-12-06T14:27:12.028Z [Modules] Modules initializing
+2023-12-06T14:27:12.029Z [Modules] Distribution: remote
+2023-12-06T14:27:12.029Z [Modules] Host updates: disabled
+2023-12-06T14:27:12.029Z [Modules] Module updates: enabled
+2023-12-06T14:27:12.029Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-06T14:27:12.029Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-06T14:27:12.029Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-06T14:27:12.211Z [Modules] No updates to install
+2023-12-06T14:27:12.212Z [Modules] Host is up to date.
+2023-12-06T14:27:12.212Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-06T14:27:12.306Z [Modules] No module updates available.
+2023-12-06T14:27:14.180Z [Modules] Host is up to date.
+2023-12-06T14:27:14.180Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-06T14:27:14.184Z [Modules] No module updates available.
+2023-12-06T14:40:10.594Z [Modules] Modules initializing
+2023-12-06T14:40:10.594Z [Modules] Distribution: remote
+2023-12-06T14:40:10.594Z [Modules] Host updates: disabled
+2023-12-06T14:40:10.594Z [Modules] Module updates: enabled
+2023-12-06T14:40:10.594Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-06T14:40:10.594Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-06T14:40:10.595Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-06T14:40:10.733Z [Modules] No updates to install
+2023-12-06T14:40:10.734Z [Modules] Host is up to date.
+2023-12-06T14:40:10.734Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-06T14:40:10.797Z [Modules] No module updates available.
+2023-12-06T14:40:12.576Z [Modules] Host is up to date.
+2023-12-06T14:40:12.576Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-06T14:40:12.579Z [Modules] No module updates available.
+2023-12-07T05:09:09.451Z [Modules] Modules initializing
+2023-12-07T05:09:09.451Z [Modules] Distribution: remote
+2023-12-07T05:09:09.451Z [Modules] Host updates: disabled
+2023-12-07T05:09:09.451Z [Modules] Module updates: enabled
+2023-12-07T05:09:09.451Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-07T05:09:09.451Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-07T05:09:09.452Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-07T05:09:09.626Z [Modules] No updates to install
+2023-12-07T05:09:09.626Z [Modules] Host is up to date.
+2023-12-07T05:09:09.627Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-07T05:09:09.729Z [Modules] No module updates available.
+2023-12-07T05:09:11.646Z [Modules] Host is up to date.
+2023-12-07T05:09:11.646Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-07T05:09:11.651Z [Modules] No module updates available.
+2023-12-07T15:55:54.607Z [Modules] Modules initializing
+2023-12-07T15:55:54.607Z [Modules] Distribution: remote
+2023-12-07T15:55:54.607Z [Modules] Host updates: disabled
+2023-12-07T15:55:54.607Z [Modules] Module updates: enabled
+2023-12-07T15:55:54.607Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-07T15:55:54.607Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-07T15:55:54.607Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-07T15:55:54.777Z [Modules] No updates to install
+2023-12-07T15:55:54.778Z [Modules] Host is up to date.
+2023-12-07T15:55:54.778Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-07T15:55:54.861Z [Modules] No module updates available.
+2023-12-07T15:55:56.830Z [Modules] Host is up to date.
+2023-12-07T15:55:56.830Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-07T15:55:56.834Z [Modules] No module updates available.
+2023-12-07T16:52:39.666Z [Modules] Modules initializing
+2023-12-07T16:52:39.667Z [Modules] Distribution: remote
+2023-12-07T16:52:39.667Z [Modules] Host updates: disabled
+2023-12-07T16:52:39.667Z [Modules] Module updates: enabled
+2023-12-07T16:52:39.667Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-07T16:52:39.667Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-07T16:52:39.667Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-07T16:52:39.801Z [Modules] No updates to install
+2023-12-07T16:52:39.801Z [Modules] Host is up to date.
+2023-12-07T16:52:39.801Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-07T16:52:39.927Z [Modules] No module updates available.
+2023-12-07T16:52:41.729Z [Modules] Host is up to date.
+2023-12-07T16:52:41.730Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-07T16:52:41.734Z [Modules] No module updates available.
+2023-12-11T00:34:26.537Z [Modules] Modules initializing
+2023-12-11T00:34:26.537Z [Modules] Distribution: remote
+2023-12-11T00:34:26.537Z [Modules] Host updates: disabled
+2023-12-11T00:34:26.537Z [Modules] Module updates: enabled
+2023-12-11T00:34:26.537Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-11T00:34:26.537Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-11T00:34:26.537Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-11T00:34:26.717Z [Modules] No updates to install
+2023-12-11T00:34:26.718Z [Modules] Host is up to date.
+2023-12-11T00:34:26.718Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-11T00:34:26.805Z [Modules] No module updates available.
+2023-12-11T00:34:28.805Z [Modules] Host is up to date.
+2023-12-11T00:34:28.806Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-11T00:34:28.810Z [Modules] No module updates available.
+2023-12-11T21:31:51.983Z [Modules] Modules initializing
+2023-12-11T21:31:51.983Z [Modules] Distribution: remote
+2023-12-11T21:31:51.984Z [Modules] Host updates: disabled
+2023-12-11T21:31:51.984Z [Modules] Module updates: enabled
+2023-12-11T21:31:51.984Z [Modules] Module install path: /home/arya/.config/discord/0.0.36/modules
+2023-12-11T21:31:51.984Z [Modules] Module installed file path: /home/arya/.config/discord/0.0.36/modules/installed.json
+2023-12-11T21:31:51.984Z [Modules] Module download path: /home/arya/.config/discord/0.0.36/modules/pending
+2023-12-11T21:31:52.161Z [Modules] No updates to install
+2023-12-11T21:31:52.162Z [Modules] Host is up to date.
+2023-12-11T21:31:52.163Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-11T21:31:52.238Z [Modules] No module updates available.
+2023-12-11T21:31:54.124Z [Modules] Host is up to date.
+2023-12-11T21:31:54.124Z [Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json
+2023-12-11T21:31:54.128Z [Modules] No module updates available.

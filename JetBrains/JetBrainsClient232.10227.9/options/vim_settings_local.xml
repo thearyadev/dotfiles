@@ -1,0 +1,84 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-cmd />
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="$APPLICATION_CONFIG_DIR$/thinProject">
+      <jump line="105" column="22" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="106" column="19" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="0" column="0" filename="$USER_HOME$/repos/thearyadev.github.io/index.html" />
+      <jump line="0" column="0" filename="$USER_HOME$/repos/thearyadev.github.io/projects/index.html" />
+      <jump line="11" column="0" filename="$USER_HOME$/repos/thearyadev.github.io/projects/index.html" />
+      <jump line="0" column="0" filename="$USER_HOME$/repos/thearyadev.github.io/projects/top500-aggregator/index.html" />
+      <jump line="35" column="52" filename="$USER_HOME$/repos/thearyadev.github.io/projects/top500-aggregator/index.html" />
+      <jump line="39" column="85" filename="$USER_HOME$/repos/thearyadev.github.io/projects/top500-aggregator/index.html" />
+      <jump line="38" column="20" filename="$USER_HOME$/repos/thearyadev.github.io/projects/top500-aggregator/index.html" />
+      <jump line="104" column="17" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="138" column="19" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="133" column="19" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="140" column="0" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="141" column="19" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="148" column="4" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="149" column="20" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="137" column="23" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="135" column="17" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="145" column="35" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="134" column="34" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="147" column="34" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="136" column="34" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="150" column="34" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="146" column="27" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="142" column="27" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="156" column="23" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="112" column="20" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+      <jump line="94" column="0" filename="$USER_HOME$/repos/thearyadev.github.io/css/main.css" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/repos/thearyadev.github.io/projects/top500-aggregator/index.html" timestamp="1701966276359">
+        <mark key="[" line="35" column="52" />
+      </file>
+      <file name="$USER_HOME$/repos/thearyadev.github.io/css/main.css" timestamp="1701967605953">
+        <mark key="[" line="110" column="0" />
+        <mark key="]" line="110" column="0" />
+        <mark key="." line="110" column="0" />
+        <mark key="^" line="142" column="27" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">Ci5jYXRlZ29yeS1saXN0ID4gdWwgbGkgewogICAgY3Vyc29yOiBwb2ludGVyOwp9Cgo=</text>
+      </register>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">Ci5jYXRlZ29yeS1saXN0ID4gdWwgbGkgewogICAgY3Vyc29yOiBwb2ludGVyOwp9Cgo=</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">ICAgIGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7Cg==</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">ICAgIHBhZGRpbmc6IDEwcHg7Cg==</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">I3Bvc3RfY29udGVudCBwcmU6OmJlZm9yZSB7CiAgICBjb250ZW50OiBjb3VudGVyKGxpbmUpOwogICAgY291bnRlci1pbmNyZW1lbnQ6IGxpbmU7CiAgICBwb3NpdGlvbjogYWJzb2x1dGU7CiAgICBsZWZ0OiAtMjBweDsKICAgIHRleHQtYWxpZ246IHJpZ2h0OwogICAgd2lkdGg6IDJlbTsgLyogQWRqdXN0IGFzIG5lZWRlZCAqLwogICAgY29sb3I6ICMwMDAwMDA7CiAgICBmb250LXNpemU6IDAuOGVtOwogICAgbGluZS1oZWlnaHQ6IDEuNmVtOwp9Cg==</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">ICAgIGNvbG9yOiB3aGl0ZTsK</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">dmFhcnIoKCktLS1iYmFhY2Nra2VlZWdycm9vdXVubmRkIA==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+</application>

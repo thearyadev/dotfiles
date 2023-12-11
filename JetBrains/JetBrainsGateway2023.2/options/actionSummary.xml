@@ -1,0 +1,28 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="EditorBackSpace">
+      <i c="5" l="1701965924669" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="2" l="1701965926921" />
+    </e>
+    <e n="EditorDown">
+      <i c="4" l="1701925194555" />
+    </e>
+    <e n="com.intellij.ui.components.BasicOptionButtonUI$ActionDelegate">
+      <i c="2" l="1701818806178" />
+    </e>
+    <e n="com.jetbrains.gateway.ssh.panels.recentConnections.HostPanel$openProjectAction$1">
+      <i c="2" l="1701965908524" />
+    </e>
+    <e n="com.jetbrains.gateway.ssh.panels.recentConnections.ProjectActionsToolbar$createRecentProjectActionsPopup$1">
+      <i c="3" l="1701965906347" />
+    </e>
+    <e n="com.jetbrains.gateway.ssh.panels.recentConnections.ProjectActionsToolbar$createRemoveFromRecent$1">
+      <i c="2" l="1701965896832" />
+    </e>
+    <e n="com.jetbrains.gateway.ssh.panels.recentConnections.ProjectActionsToolbar$createStopProjectAction$1">
+      <i c="4" l="1701965887787" />
+    </e>
+  </component>
+</application>

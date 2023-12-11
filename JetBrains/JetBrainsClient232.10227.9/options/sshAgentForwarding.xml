@@ -1,0 +1,10 @@
+<application>
+  <component name="ssh.agent.forwarding.settings">
+    <option name="forwardingEnabled" value="true" />
+    <option name="lastAuthDialogState">
+      <AuthDialogState>
+        <option name="accessType" value="Allow any request this session" />
+      </AuthDialogState>
+    </option>
+  </component>
+</application>

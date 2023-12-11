@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>5B0656E3-CF7E-4277-85E4-69EAAAE9751C</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Plugin-In-Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Search-Login" transform="translate(-206.000000, -220.000000)" stroke="#000000" stroke-width="2">
+            <g id="Group-2" transform="translate(66.000000, 221.000000)">
+                <g id="shopping-basket-search" transform="translate(141.000000, 0.000000)">
+                    <circle id="Oval" cx="23.8806818" cy="23.8806818" r="8.23295455"></circle>
+                    <line x1="35.6420455" y1="35.6420455" x2="29.7017727" y2="29.7017727" id="Path"></line>
+                    <path d="M10.9431818,26.2329545 L5.94695455,26.2329545 C4.89839243,26.2138923 4.00053301,25.4763881 3.77815909,24.4515 L0.425386364,10.3378636 C0.243550607,9.65313266 0.383528498,8.92286037 0.805670738,8.35389932 C1.22781298,7.78493826 1.88614139,7.43925759 2.59418182,7.41477273 L31.0535455,7.41477273 C31.7615859,7.43925759 32.4199143,7.78493826 32.8420565,8.35389932 C33.2641988,8.92286037 33.4041767,9.65313266 33.2223409,10.3378636 L32.7518864,12.3075" id="Path" opacity="0.25"></path>
+                    <line x1="5.0625" y1="7.41477273" x2="12.1193182" y2="0.357954545" id="Path" opacity="0.25"></line>
+                    <line x1="28.5852273" y1="7.41477273" x2="21.5284091" y2="0.361090909" id="Path" opacity="0.25"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+
+[Default Applications]
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/jetbrains-gateway=jetbrains-gateway.desktop
+text/html=brave-browser.desktop
+x-scheme-handler/http=brave-browser.desktop
+x-scheme-handler/https=brave-browser.desktop
+x-scheme-handler/about=brave-browser.desktop
+x-scheme-handler/unknown=brave-browser.desktop
+inode/directory=nautilus.desktop
+x-scheme-handler/etcher=balena-etcher.desktop

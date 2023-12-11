@@ -1,0 +1,39 @@
+2023/12/10-19:42:03.427 4 Reusing MANIFEST /home/arya/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2023/12/10-19:42:03.427 4 Recovering log #63
+2023/12/10-19:42:03.428 4 Reusing old log /home/arya/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000063.log 
+2023/12/10-19:42:16.288 6 Level-0 table #67: started
+2023/12/10-19:42:16.293 6 Level-0 table #67: 53715 bytes OK
+2023/12/10-19:42:16.297 6 Delete type=0 #63
+2023/12/10-19:43:25.998 6 Level-0 table #69: started
+2023/12/10-19:43:26.010 6 Level-0 table #69: 88672 bytes OK
+2023/12/10-19:43:26.014 6 Delete type=0 #66
+2023/12/10-19:43:26.015 6 Compacting 4@0 + 1@1 files
+2023/12/10-19:43:26.024 6 Generated table #70@0: 167 keys, 322671 bytes
+2023/12/10-19:43:26.025 6 Compacted 4@0 + 1@1 files => 322671 bytes
+2023/12/10-19:43:26.030 6 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/12/10-19:43:26.031 6 Delete type=2 #61
+2023/12/10-19:43:26.031 6 Delete type=2 #67
+2023/12/10-19:43:26.031 6 Delete type=2 #69
+2023/12/10-19:43:26.031 6 Delete type=2 #64
+2023/12/10-19:43:26.031 6 Delete type=2 #59
+2023/12/10-19:46:35.533 6 Level-0 table #72: started
+2023/12/10-19:46:35.537 6 Level-0 table #72: 36116 bytes OK
+2023/12/10-19:46:35.542 6 Delete type=0 #68
+2023/12/10-19:50:47.942 6 Level-0 table #74: started
+2023/12/10-19:50:47.948 6 Level-0 table #74: 66415 bytes OK
+2023/12/10-19:50:47.952 6 Delete type=0 #71
+2023/12/10-19:52:47.941 6 Level-0 table #76: started
+2023/12/10-19:52:47.951 6 Level-0 table #76: 16085 bytes OK
+2023/12/10-19:52:47.955 6 Delete type=0 #73
+2023/12/10-19:52:55.249 4 Level-0 table #78: started
+2023/12/10-19:52:55.255 4 Level-0 table #78: 186466 bytes OK
+2023/12/10-19:52:55.259 4 Delete type=0 #75
+2023/12/10-19:52:55.259 4 Compacting 4@0 + 1@1 files
+2023/12/10-19:52:55.267 4 Generated table #79@0: 263 keys, 510654 bytes
+2023/12/10-19:52:55.267 4 Compacted 4@0 + 1@1 files => 510654 bytes
+2023/12/10-19:52:55.271 4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/12/10-19:52:55.271 4 Delete type=2 #70
+2023/12/10-19:52:55.271 4 Delete type=2 #74
+2023/12/10-19:52:55.271 4 Delete type=2 #76
+2023/12/10-19:52:55.271 4 Delete type=2 #78
+2023/12/10-19:52:55.271 4 Delete type=2 #72
