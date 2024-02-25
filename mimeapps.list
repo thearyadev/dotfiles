@@ -8,6 +8,13 @@ x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
 inode/directory=nautilus.desktop
 x-scheme-handler/etcher=balena-etcher.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_home_arya_Downloads_eclipse_.desktop
+x-scheme-handler/eclipse+mpc x-scheme-handler/eclipse+command=_home_arya_Downloads_eclipse_.desktop
+x-scheme-handler/affine=AFFiNE.desktop
 
 [Added Associations]
 application/x-bittorrent=nvim.desktop;
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop;
+x-scheme-handler/etcher=balena-etcher.desktop
+x-scheme-handler/affine=AFFiNE.desktop
+text/plain=org.kde.kwrite.desktop;

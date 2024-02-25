@@ -1,1 +1,1 @@
-{"sid":"1f5e923700904954bdb34abe5561b38b","init":false,"started":"2023-12-05T20:01:24.052Z","timestamp":"2023-12-05T20:03:04.647Z","status":"ok","errors":1,"duration":100.59500002861023,"attrs":{"release":"balena-etcher@1.18.11","environment":"production"}}
+{"sid":"25802d71943645e0a5c1cba972136564","init":true,"started":"2024-01-15T20:16:36.126Z","timestamp":"2024-01-15T20:16:36.126Z","status":"ok","errors":0,"duration":0,"attrs":{"release":"balena-etcher@1.18.11","environment":"production"}}
