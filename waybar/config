@@ -3,35 +3,33 @@
     "margin-top": 10,
     "modules-left": ["disk", "memory", "cpu", "battery"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": [ "pulseaudio", "network", "clock"],
+    "modules-right": [ "wireplumber", "network", "clock"],
     "disk": {
-        "format": " {free}"
+        "format": "   {free}"
     },
     "memory": {
-        "format": " {used} / {total}Gib",
+        "format": "   {used} / {total}Gib",
         "interval": 3
     },
     "cpu": {
-        "format": " {usage}%",
+        "format": "{usage}%",
         "interval": 3
-    },
-    "battery": {
-        "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""]
     },
     "wlr/workspaces": {
         "format": "{icon}",
     },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-icons": ["", ""],
-        "format-muted": " Muted"
+    "wireplumber": {
+        "format": "{icon}   {volume}% - {node_name}",
+        "format-muted": "AUDIO MUTED",
+        "on-click": "helvum",
+        "format-icons": ["", "", ""],
+	"max-volume": 120.0
     },
     "network": {
-       "format": " {signaldBm}|{bandwidthTotalBits}",
+       "format": "{ifname} - {bandwidthTotalBits}",
        "interval": 3
     },
     "clock": {
-        "format": " {:%I:%M %m-%d-%Y}"
+        "format": "{:%I:%M %m-%d-%Y}"
     }
 }
