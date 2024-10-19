@@ -169,7 +169,6 @@ require("which-key").add({
     { "<leader>w_", hidden = true },
     { "<leader>", group = "VISUAL <leader>" },
     {"<leader>h", group = "Git [H]unk",mode = "v" },
-    { "<leader>k", function() print("hello") end, desc = "hello"}
 })
 
 
