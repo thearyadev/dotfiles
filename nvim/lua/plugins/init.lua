@@ -10,7 +10,7 @@ require("lazy").setup({
 	"xiyaowong/transparent.nvim",
 	{
 		"christoomey/vim-tmux-navigator",
-		lazy=false
+		lazy = false,
 	},
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -26,8 +26,8 @@ require("lazy").setup({
 				opts = {
 					enable_rename = true,
 					enable_close_on_stash = true,
-					enable_close = true
-				}
+					enable_close = true,
+				},
 			})
 		end,
 	},

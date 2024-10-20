@@ -38,7 +38,6 @@ zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::kubectl
-zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 
 autoload -U compinit && compinit
@@ -66,10 +65,22 @@ zstyle ':completion:*' menu no
 
 alias ls='eza'
 
+# neovim
+alias vim='nvim'
+
 
 # fzf
 
 eval "$(fzf --zsh)"
+
+
+# kubenetes aliases
+source "$HOME/.kubernetes.zsh"
+
+
+# nvm
+#
+source /usr/share/nvm/init-nvm.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
