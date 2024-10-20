@@ -9,6 +9,10 @@ require("lazy").setup({
 	"github/copilot.vim",
 	"xiyaowong/transparent.nvim",
 	{
+		"christoomey/vim-tmux-navigator",
+		lazy=false
+	},
+	{
 		"nvim-treesitter/nvim-treesitter",
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter-textobjects",
@@ -197,7 +201,9 @@ require("lazy").setup({
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
-		opts = {},
+		opts = {
+			messages = { view = "mini", view_warn = "mini" },
+		},
 		dependencies = {
 			"MunifTanjim/nui.nvim",
 			"rcarriga/nvim-notify",
