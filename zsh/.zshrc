@@ -68,19 +68,23 @@ alias ls='eza'
 # neovim
 alias vim='nvim'
 
-
 # fzf
 
 eval "$(fzf --zsh)"
 
+# cd
+
+alias cd='z'
 
 # kubenetes aliases
 source "$HOME/.kubernetes.zsh"
 
 
 # nvm
-#
 source /usr/share/nvm/init-nvm.sh
+
+# zoxide
+eval "$(zoxide init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

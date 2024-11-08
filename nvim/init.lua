@@ -50,6 +50,7 @@ vim.defer_fn(function()
 			"vimdoc",
 			"vim",
 			"bash",
+      "swift",
 		},
 
 		-- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
@@ -197,6 +198,10 @@ mason_lspconfig.setup_handlers({
 		})
 	end,
 })
+
+-- swift 
+require("lspconfig").sourcekit.setup({})
+
 
 local cmp = require("cmp")
 local luasnip = require("luasnip")

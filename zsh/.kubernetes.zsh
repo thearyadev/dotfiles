@@ -6,3 +6,5 @@ alias ke='kubecolor get events'
 alias kn='kubecolor config set-context --current --namespace'
 alias ka='kubecolor apply -f'
 
+
+compdef kubecolor=kubectl
