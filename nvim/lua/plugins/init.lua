@@ -222,6 +222,17 @@ require("lazy").setup({
 		config = true,
 		dependencies = { "nvim-treesitter/nvim-treesitter" },
 	},
+		{
+			"supermaven-inc/supermaven-nvim",
+			config = function()
+				require("supermaven-nvim").setup({
+					keymaps = {
+						accept_suggestion = "<S-Tab>",
+						clear_suggestion = "<S-BS>",
+					},
+				})
+			end,
+		},
 }, {
 	lockfile = "~/.lazy-lock.json",
 })
