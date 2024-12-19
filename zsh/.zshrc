@@ -68,6 +68,9 @@ alias ls='eza'
 # neovim
 alias vim='nvim'
 
+# nvim editor
+export EDITOR='nvim'
+
 # fzf
 
 eval "$(fzf --zsh)"
