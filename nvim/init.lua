@@ -171,7 +171,7 @@ require("which-key").add({
     { "<leader>w", group = "[W]orkspace" },
     { "<leader>w_", hidden = true },
     { "<leader>", group = "VISUAL <leader>" },
-    {"<leader>h", group = "Git [H]unk",mode = "v" },
+    { "<leader>h", group = "Git [H]unk",mode = "v" },
 })
 
 
@@ -184,6 +184,9 @@ require("neodev").setup()
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
+local capabilities2 = require("blink.cmp").get_lsp_capabilities()
+
+
 local mason_lspconfig = require("mason-lspconfig")
 
 mason_lspconfig.setup({
@@ -193,7 +196,7 @@ mason_lspconfig.setup({
 mason_lspconfig.setup_handlers({
 	function(server_name)
 		require("lspconfig")[server_name].setup({
-			capabilities = capabilities,
+			capabilities = capabilities2,
 			on_attach = on_attach,
 			settings = servers[server_name],
 			filetypes = (servers[server_name] or {}).filetypes,
