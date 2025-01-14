@@ -257,5 +257,32 @@ cmp.setup({
 		{ name = "path" },
 	},
 })
+-- Define the command to replace "it-tools" with an argument
+vim.api.nvim_create_user_command('Rep', function(opts)
+    -- Get the argument passed to the command
+    local replacement = opts.args
+    
+    -- Get the current buffer
+    local bufnr = vim.api.nvim_get_current_buf()
+    
+    -- Get all lines in the current buffer
+    local lines = vim.api.nvim_buf_get_lines(bufnr, 0, -1, false)
+    
+    -- Process each line
+    for i, line in ipairs(lines) do
+        -- Replace "it-tools" with the provided argument
+        local new_line = line:gsub("it%-tools", replacement)
+        
+        -- Update the line if it changed
+        if new_line ~= line then
+            vim.api.nvim_buf_set_lines(bufnr, i-1, i, false, {new_line})
+        end
+    end
+end, {
+    nargs = 1,  -- Expect exactly one argument
+    desc = "Replace 'it-tools' with the specified text"
+})
+-- require('transparent').clear_prefix('telescope')
+-- require('transparent').clear_prefix('trouble')
 
 -- vim: ts=2 sts=2 sw=2 et

@@ -53,14 +53,14 @@ require("lazy").setup({
 			})
 		end,
 	},
-	{
-		"romgrk/barbar.nvim",
-		dependencies = { "lewis6991/gitsigns.nvim", "nvim-tree/nvim-web-devicons" },
-		init = function()
-			vim.g.barbar_auto_setup = true
-		end,
-		version = "^1.0.0",
-	},
+	-- {
+	-- 	"romgrk/barbar.nvim",
+	-- 	dependencies = { "lewis6991/gitsigns.nvim", "nvim-tree/nvim-web-devicons" },
+	-- 	init = function()
+	-- 		vim.g.barbar_auto_setup = true
+	-- 	end,
+	-- 	version = "^1.0.0",
+	-- },
 
 	{
 		"Nvchad/nvterm",
@@ -83,6 +83,15 @@ require("lazy").setup({
 		lazy = false,
 		priority = 1000,
 		opts = {},
+		config = function()
+			require("tokyonight").setup({
+				transparent = true,
+				plugins = {
+					telescope = false,
+					["nvim-tree"] = false,
+				}
+			})
+		end,
 	},
 	{
 		"nvim-tree/nvim-tree.lua",
@@ -194,8 +203,8 @@ require("lazy").setup({
 		"nvim-lualine/lualine.nvim",
 		opts = {
 			options = {
-				icons_enabled = false,
-				theme = "auto",
+				icons_enabled = true,
+				theme = "iceberg_dark",
 				component_separators = "|",
 				section_separators = "",
 			},
