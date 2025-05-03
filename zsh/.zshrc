@@ -89,6 +89,37 @@ source /usr/share/nvm/init-nvm.sh
 # zoxide
 eval "$(zoxide init zsh)"
 
+# cargo 
+. "$HOME/.cargo/env" 
+
+path+=('/home/arya/go/bin')
+path+=('/opt/cuda/bin')
+
+alias countf='find . -name "*.go" -type f'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+
+# bun completions
+[ -s "/home/arya/.bun/_bun" ] && source "/home/arya/.bun/_bun"
+
+# github
+
+alias ghl='gh run list'
+alias ghw='gh run watch'
+alias ghrr='gh workflow run release'
+alias mountnfs='sudo mount -t nfs 192.168.1.34:/mnt/critical /mnt/critical && sudo mount -t nfs 192.168.1.34:/mnt/mass /mnt/mass'
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/arya/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

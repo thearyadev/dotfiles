@@ -109,7 +109,9 @@ require("lazy").setup({
 				"williamboman/mason.nvim",
 				config = true,
 			},
-			"williamboman/mason-lspconfig.nvim",
+			{"williamboman/mason-lspconfig.nvim", opts = {
+				ensure_installed = { "eslint@4.8.0" }
+			}},
 			{ "j-hui/fidget.nvim", opts = {} },
 			"folke/neodev.nvim",
 		},
@@ -240,7 +242,6 @@ require("lazy").setup({
 		},
 		dependencies = {
 			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify",
 		},
 	},
 	{
