@@ -1,3 +1,5 @@
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -90,7 +92,7 @@ source /usr/share/nvm/init-nvm.sh
 eval "$(zoxide init zsh)"
 
 # cargo 
-. "$HOME/.cargo/env" 
+# . "$HOME/.cargo/env" 
 
 path+=('/home/arya/go/bin')
 path+=('/opt/cuda/bin')
@@ -124,3 +126,20 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+
+
+nfs(){
+    sudo mount -t nfs 192.168.1.34:/mnt/critical /mnt/critical
+    sudo mount -t nfs 192.168.1.34:/mnt/mass /mnt/mass
+}
+
+
+
+
+
+
+
+
+
+
