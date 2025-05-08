@@ -94,6 +94,7 @@ eval "$(zoxide init zsh)"
 
 path+=('/home/arya/go/bin')
 path+=('/opt/cuda/bin')
+path+=('/opt/kustomize/viaduct.ai/v1/ksops')
 
 alias countf='find . -name "*.go" -type f'
 
