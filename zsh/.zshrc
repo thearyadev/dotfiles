@@ -127,6 +127,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 
 
 nfs(){
@@ -134,7 +137,7 @@ nfs(){
     sudo mount -t nfs 192.168.1.34:/mnt/mass /mnt/mass
 }
 
-
+alias ..='cd ..'
 
 
 
