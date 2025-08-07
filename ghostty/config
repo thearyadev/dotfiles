@@ -1,0 +1,3 @@
+theme = CutiePro
+keybind = performable:ctrl+v=paste_from_clipboard
+gtk-single-instance = true
