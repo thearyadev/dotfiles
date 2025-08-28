@@ -1,0 +1,14 @@
+{
+  "Zen Browser": {
+    "name": "Zen",
+    "icon": "zen-browser",
+    "exec": "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=launch-script.sh --file-forwarding app.zen_browser.zen @@u %u @@",
+    "keywords": "en zen firefox irefox fox"
+  },
+  "Ghostty": {
+    "name": "Ghostty",
+    "icon": "terminal",
+    "exec": "ghostty",
+    "keywords": "term terminal ghostty temr erm tmr"
+  }
+}
