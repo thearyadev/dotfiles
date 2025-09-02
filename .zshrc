@@ -117,5 +117,7 @@ open() {
     command xdg-open "$@" >/dev/null 2>&1 &!
 }
 
+path+=('/opt/kustomize/viaduct.ai/v1/ksops')
 
 source .fun.zsh
+
