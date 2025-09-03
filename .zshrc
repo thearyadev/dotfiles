@@ -95,7 +95,7 @@ compdef kubecolor=kubectl
 
 # nvm
 #
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 # zoxide
 eval "$(zoxide init zsh)"
@@ -119,5 +119,4 @@ open() {
 
 path+=('/opt/kustomize/viaduct.ai/v1/ksops')
 
-source .fun.zsh
 
