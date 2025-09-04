@@ -89,6 +89,7 @@ alias kgpww='kubecolor get pods -o wide --watch'
 alias ke='kubecolor get events'
 alias kn='kubecolor config set-context --current --namespace'
 alias kew='kubecolor get events --watch'
+alias kust='kustomize build --enable-alpha-plugins --enable-exec'
 source <(kubectl completion zsh)
 compdef kubecolor=kubectl
 
@@ -115,6 +116,10 @@ alias ..='cd ..'
 
 open() {
     command xdg-open "$@" >/dev/null 2>&1 &!
+}
+
+opens() {
+    command xdg-open "https://$@"
 }
 
 path+=('/opt/kustomize/viaduct.ai/v1/ksops')
