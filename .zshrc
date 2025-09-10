@@ -124,4 +124,5 @@ opens() {
 
 path+=('/opt/kustomize/viaduct.ai/v1/ksops')
 
+alias gamemode='/home/arya/.config/hypr/gamemode.sh'
 
