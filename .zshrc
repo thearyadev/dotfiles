@@ -112,6 +112,9 @@ alias mountnfs='sudo mount -t nfs 192.168.1.34:/mnt/critical /mnt/critical && su
 
 
 alias ..='cd ..'
+alias sl='ls'
+alias s='ls'
+alias ll='ls -la'
 
 
 open() {
@@ -125,4 +128,5 @@ opens() {
 path+=('/opt/kustomize/viaduct.ai/v1/ksops')
 
 alias gamemode='/home/arya/.config/hypr/gamemode.sh'
-
+alias shutdown="systemctl suspend"
+alias sshutdown="shutdown now"

@@ -1,0 +1,6 @@
+[Unit]
+Description=Run clean_downloads
+
+[Service]
+Type=oneshot
+ExecStart=/home/arya/scripts/clean_downloads.sh

@@ -1,0 +1,9 @@
+[Unit]
+Description=Clean the downloads folder daily
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

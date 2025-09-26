@@ -9,6 +9,10 @@ local servers = {
 			},
 		},
 	},
+	gopls = {},
+	clangd = {},
+	rust_analyzer = {},
+ 	csharp_ls = {}
 }
 
 local lspconfig = require("lspconfig")
