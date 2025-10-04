@@ -126,7 +126,7 @@ opens() {
 }
 
 path+=('/opt/kustomize/viaduct.ai/v1/ksops')
+path+=('/usr/lib/qt6/bin/')
 
 alias gamemode='/home/arya/.config/hypr/gamemode.sh'
-alias shutdown="systemctl suspend"
-alias sshutdown="shutdown now"
+alias sweep="systemctl suspend"

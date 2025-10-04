@@ -12,7 +12,8 @@ local servers = {
 	gopls = {},
 	clangd = {},
 	rust_analyzer = {},
- 	csharp_ls = {}
+ 	csharp_ls = {},
+	qmlls = {}
 }
 
 local lspconfig = require("lspconfig")

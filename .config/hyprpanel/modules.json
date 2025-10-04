@@ -1,10 +1,2 @@
 {
-  "custom/volume": {
-    "label": "{layer}",
-    "truncationSize": -1,
-    "execute": "kb-readlayer 4d44 5244 | xargs -I{} printf '{\"layer\": \"%s\"}' {}",
-    "interval": 50,
-    "executeOnInit": true,
-    "hideOnEmpty": true
-  }
 }
