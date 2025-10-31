@@ -1,0 +1,146 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# --- Functions ---
+usage() {
+  cat <<EOF
+Usage: $(basename "$0") [OPTIONS] <video-file>
+
+Trim a segment from a video using mpv for position picking and ffmpeg for encoding.
+
+Options:
+  -s, --size <SIZE>   Target maximum output size (e.g. 10M, 500MB)
+  -u, --upload        (Optional) Upload the result after encoding
+  -h, --help          Show this help message and exit
+
+Example:
+  $(basename "$0") video.mp4
+  $(basename "$0") --size 10M video.mp4
+  $(basename "$0") --upload video.mp4
+EOF
+  exit 1
+}
+
+error() {
+  echo "❌ Error: $*" >&2
+  exit 1
+}
+
+pick_time() {
+  mpv --keep-open=yes --idle --force-window --no-terminal --really-quiet --quiet \
+    --script=/home/arya/.config/mpv/dump-position.lua \
+    "$@" 2>&1 | grep -E '^[0-9]+(\.[0-9]+)?$'
+}
+
+# --- Parse CLI arguments ---
+TARGET_SIZE=""
+UPLOAD=false
+VIDEO=""
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -s|--size)
+      TARGET_SIZE=$2
+      shift 2
+      ;;
+    -u|--upload)
+      UPLOAD=true
+      shift
+      ;;
+    -h|--help)
+      usage
+      ;;
+    -*)
+      error "Unknown option: $1"
+      ;;
+    *)
+      VIDEO=$1
+      shift
+      ;;
+  esac
+done
+
+[[ -z "${VIDEO}" ]] && usage
+[[ ! -f "${VIDEO}" ]] && error "File not found: ${VIDEO}"
+
+# --- Pick start and end ---
+echo "▶ Pick your START position (seek + q)"
+start=$(pick_time "$VIDEO") || error "No start position chosen"
+echo "Start is $start s"
+
+seek_to=$(awk -v s="$start" 'BEGIN{print s+30}')
+echo "▶ Resuming 30 s after start (${seek_to}s); pick END (q)"
+end=$(pick_time --start="$seek_to" "$VIDEO") || error "No end position chosen"
+echo "End is $end s"
+
+# --- Validate ---
+if awk -v s="$start" -v e="$end" 'BEGIN{exit (e<=s)}'; then
+  duration=$(awk -v s="$start" -v e="$end" 'BEGIN{printf "%.3f", e-s}')
+else
+  error "End ($end) must be after start ($start)"
+fi
+
+echo "✅ Range: ${start}s–${end}s (len ${duration}s)"
+
+# --- Determine output filename ---
+base=${VIDEO%.*}
+out="${base}_clip.mp4"
+
+# --- Calculate bitrate if target size provided ---
+VIDEO_BITRATE="5M"
+AUDIO_BITRATE=192000  # 192k in bits/sec
+
+if [[ -n "$TARGET_SIZE" ]]; then
+  echo "🎯 Target file size: $TARGET_SIZE"
+
+  size_bytes=$(numfmt --from=iec "$TARGET_SIZE" 2>/dev/null || true)
+  [[ -z "$size_bytes" ]] && error "Invalid size format: $TARGET_SIZE"
+
+  usable_bits=$(awk -v s="$size_bytes" 'BEGIN{print (s*8)*0.95}')
+
+  video_bitrate=$(awk -v total="$usable_bits" -v dur="$duration" -v audio="$AUDIO_BITRATE" \
+                       'BEGIN{v=(total/dur - audio); if(v < 100000) v=100000; print v}')
+  VIDEO_BITRATE=$(awk -v v="$video_bitrate" 'BEGIN{printf "%.0f", v}')
+  echo "⚙️  Adjusted video bitrate: ${VIDEO_BITRATE} bps (~$(awk -v v="$VIDEO_BITRATE" 'BEGIN{printf "%.1f", v/1000000}') Mbps)"
+fi
+
+# --- ffmpeg command ---
+echo "🚀 Encoding..."
+ffmpeg -hide_banner -loglevel error \
+  -init_hw_device vaapi=intel:/dev/dri/renderD128 \
+  -hwaccel vaapi -hwaccel_output_format vaapi \
+  -hwaccel_device /dev/dri/renderD128 \
+  -ss "$start" -t "$duration" \
+  -i "$VIDEO" \
+  -vf 'scale_vaapi=format=nv12' \
+  -c:v h264_vaapi -profile:v high -b:v "$VIDEO_BITRATE" \
+  -c:a aac -b:a "${AUDIO_BITRATE}" \
+  -movflags +faststart \
+  "$out" >/dev/null 2>&1
+
+echo "🎬 Clip saved to: $out"
+
+# --- Optional upload ---
+if $UPLOAD; then
+  token="MTc2MTUxNDkzODg5OA==.MWVlNjY4YjljZTE0OTg5YzgxZDEwZDE4OGFlMWE0YzEuM2EzZjE5OWMwNWM4NTZkYzBlZTFjYTBkODFhN2VhMjhjN2Q4ZmUyY2ZiMjlkOThiM2I2MDE5MjMzNWMwOTY1YjU4OTdiZDcwMjU1N2MwZjEyZDY0MTZlNzFmZjhiN2JjMmNlMDJlZWU0NjIwZTdmN2YxOTg1ZjZjNDRhMGNlZWViYTRkMjQ0Yjk3NDNmNTVlZjRhMDRjNmJjNjk3NjYyNA=="
+  url="https://zipline-direct.aryankothari.dev"
+
+  echo "📤 Uploading $out to Zipline..."
+
+  response=$(curl -s -X POST "$url/api/upload" \
+    -H "Authorization: $token" \
+    -F "file=@${out};type=video/mp4")
+
+  uploaded_url=$(echo "$response" | jq -r '.files[0].url')
+  if [ "$uploaded_url" != "null" ]; then
+    uploaded_url="${uploaded_url/-direct/}"
+    uploaded_url="${uploaded_url/http:/https:}"
+    echo "$uploaded_url"
+    echo "✅ Uploaded successfully: $uploaded_url"
+    wl-copy "$uploaded_url"
+    rm "$out"
+  else
+    echo "❌ Upload failed or response malformed."
+    echo "$out will not be deleted" 
+  fi
+fi

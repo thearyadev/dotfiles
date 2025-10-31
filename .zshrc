@@ -1,3 +1,15 @@
+if [[ -z $DISPLAY && -z $WAYLAND_DISPLAY ]]; then
+    flagfile=/tmp/hyprland-launched-$(whoami)
+    if [[ ! -e $flagfile ]]; then
+        ttydev=$(tty)
+        if [[ $ttydev =~ ^/dev/tty[0-9]+$ ]]; then
+            echo "Starting Hyprland on $ttydev..."
+            touch "$flagfile"
+            exec Hyprland
+        fi
+    fi
+fi
+
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -130,3 +142,18 @@ path+=('/usr/lib/qt6/bin/')
 
 alias gamemode='/home/arya/.config/hypr/gamemode.sh'
 alias sweep="systemctl suspend"
+alias rec="/home/arya/scripts/rec"
+alias trim="/home/arya/scripts/trim"
+alias trimrec='trim $(rec)'
+
+vidcompare() {
+  if [ $# -ne 2 ]; then
+    echo "Usage: twoplay <file1> <file2>"
+    return 1
+  fi
+
+  local file1=$1
+  local file2=$2
+
+  mpv "$file1" --lavfi-complex="[vid1][vid2]hstack=inputs=2[v];[v]format=yuv420p[vo]" --external-file="$file2"
+}
