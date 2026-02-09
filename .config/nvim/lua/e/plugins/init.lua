@@ -38,26 +38,24 @@ require("lazy").setup({
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter-textobjects",
 		},
-		build = ":TSUpdate",
-		config = function()
-			local configs = require("nvim-treesitter.configs")
-			configs.setup({
-				ensure_installed = {
-					"python",
-					"typescript",
-					"lua",
-					"tsx",
-					"javascript",
-					"bash"
-				},
-				sync_install = false,
-				highlight = {enable = true},
-				indent = {enable = true},
-				ignore_install = {},
-				auto_install = false,
-				modules = {}
-
+		build = function()
+			local treesitter = require("nvim-treesitter")
+			treesitter.setup({
+				install_dir = vim.fn.stdpath("data") .. "/site",
 			})
+			treesitter.install({"python", "typescript", "lua", "tsx", "javascript", "bash"}):wait(300000)
+		end,
+		config = function()
+			local treesitter = require("nvim-treesitter")
+			treesitter.setup({
+				install_dir = vim.fn.stdpath("data") .. "/site",
+			})
+			vim.treesitter.language.add("python")
+			vim.treesitter.language.add("typescript")
+			vim.treesitter.language.add("lua")
+			vim.treesitter.language.add("tsx")
+			vim.treesitter.language.add("javascript")
+			vim.treesitter.language.add("bash")
 		end,
 	},
 	{

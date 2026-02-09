@@ -16,7 +16,6 @@ local servers = {
 	qmlls = {}
 }
 
-local lspconfig = require("lspconfig")
 local bindings = require("e.core.keymap")
 local apply_keymaps = require("e.core.apply_keymap")
 
@@ -32,8 +31,15 @@ local function on_attach(_, bufnr)
 	apply_keymaps.apply_keymaps(bind_bufnum_attached)
 end
 
+vim.api.nvim_create_autocmd('LspAttach', {
+	group = vim.api.nvim_create_augroup('UserLspConfig', {}),
+	callback = function(ev)
+		on_attach(nil, ev.buf)
+	end,
+})
+
 for server, config in pairs(servers) do
 	config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
-	config.on_attach = on_attach
-	lspconfig[server].setup(config)
+	vim.lsp.config(server, config)
+	vim.lsp.enable(server)
 end

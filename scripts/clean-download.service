@@ -1,0 +1,6 @@
+[Unit]
+Description=Clean Downloads Folder
+
+[Service]
+Type=oneshot
+ExecStart=/home/arya/dotfiles/scripts/clean-download.sh
