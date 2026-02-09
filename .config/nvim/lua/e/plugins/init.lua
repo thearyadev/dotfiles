@@ -34,31 +34,6 @@ require("lazy").setup({
 		lazy = false,
 	},
 	{
-		"nvim-treesitter/nvim-treesitter",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter-textobjects",
-		},
-		build = function()
-			local treesitter = require("nvim-treesitter")
-			treesitter.setup({
-				install_dir = vim.fn.stdpath("data") .. "/site",
-			})
-			treesitter.install({"python", "typescript", "lua", "tsx", "javascript", "bash"}):wait(300000)
-		end,
-		config = function()
-			local treesitter = require("nvim-treesitter")
-			treesitter.setup({
-				install_dir = vim.fn.stdpath("data") .. "/site",
-			})
-			vim.treesitter.language.add("python")
-			vim.treesitter.language.add("typescript")
-			vim.treesitter.language.add("lua")
-			vim.treesitter.language.add("tsx")
-			vim.treesitter.language.add("javascript")
-			vim.treesitter.language.add("bash")
-		end,
-	},
-	{
 		"windwp/nvim-ts-autotag",
 		config = function()
 			require("nvim-ts-autotag").setup({
@@ -74,6 +49,11 @@ require("lazy").setup({
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
 		opts = {},
+	},
+	{
+		'nvim-treesitter/nvim-treesitter',
+		lazy = false,
+		build = ':TSUpdate'
 	},
 	{
 		"folke/tokyonight.nvim",
