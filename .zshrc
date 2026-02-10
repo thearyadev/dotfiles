@@ -5,7 +5,7 @@ if [[ -z $DISPLAY && -z $WAYLAND_DISPLAY ]]; then
         if [[ $ttydev =~ ^/dev/tty[0-9]+$ ]]; then
             echo "Starting Hyprland on $ttydev..."
             touch "$flagfile"
-            exec Hyprland
+            exec start-hyprland
         fi
     fi
 fi
