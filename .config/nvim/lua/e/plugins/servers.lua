@@ -13,7 +13,10 @@ local servers = {
 	clangd = {},
 	rust_analyzer = {},
  	csharp_ls = {},
-	qmlls = {}
+	qmlls = {},
+	ts_ls = {},
+	tofu_ls = {}
+
 }
 
 local bindings = require("e.core.keymap")
@@ -49,3 +52,4 @@ vim.api.nvim_create_autocmd('FileType', {
   pattern = { 'python'},
   callback = function() vim.treesitter.start() end,
 })
+

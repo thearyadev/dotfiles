@@ -53,7 +53,12 @@ require("lazy").setup({
 	{
 		'nvim-treesitter/nvim-treesitter',
 		lazy = false,
-		build = ':TSUpdate'
+		build = ':TSUpdate',
+		config = function()
+			require("nvim-treesitter").setup({
+				install = { "typescript", "tsx", "javascript", "lua", "vim", "vimdoc", "json", "html", "css" },
+			})
+		end,
 	},
 	{
 		"folke/tokyonight.nvim",
