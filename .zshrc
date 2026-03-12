@@ -120,7 +120,7 @@ eval "$(zoxide init zsh)"
 
 # github
 
-alias mountnfs='sudo mount -t nfs 192.168.1.34:/mnt/critical /mnt/critical && sudo mount -t nfs 192.168.1.34:/mnt/mass /mnt/mass'
+alias mountnfs='sudo mount -t nfs 192.168.30.69:/mnt/critical /mnt/critical && sudo mount -t nfs 192.168.30.69:/mnt/mass /mnt/mass'
 
 
 alias ..='cd ..'
@@ -141,6 +141,7 @@ path+=('/opt/kustomize/viaduct.ai/v1/ksops')
 path+=('/usr/lib/qt6/bin/')
 path+=('/home/arya/.local/bin/')
 path+=('/home/arya/.npm/global/bin')
+path+=('/home/arya/scripts')
 
 alias gamemode='/home/arya/.config/hypr/gamemode.sh'
 alias sweep="systemctl suspend"

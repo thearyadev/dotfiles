@@ -1,0 +1,26 @@
+#!/bin/bash
+
+source /home/arya/scripts/env
+DISCORD_TOKEN=$DTOKEN
+CHANNEL_ID='1476423370269790208'
+
+SCREENSHOT_PATH="/tmp/overwatch_found.png"
+prev_conn_ct=$(ss -aunmp | grep -c "Overwatch.exe")
+
+while true; do
+    cur_conn_ct=$(ss -aunmp | grep -c "Overwatch.exe")
+    if [[ $prev_conn_ct -eq 2 && $cur_conn_ct -ge 3 ]]; then
+        hyprctl dispatch focuswindow title:Overwatch
+        sleep 3
+        grim -g "0,0 2560x1440" "$SCREENSHOT_PATH"
+        echo "Screenshot taken, uploading to Discord..."
+        curl -H "Authorization: Bot $DISCORD_TOKEN" \
+             -X POST "https://discord.com/api/v10/channels/$CHANNEL_ID/messages" \
+             -F "content=Match found!" \
+             -F "file=@$SCREENSHOT_PATH"
+        rm -f "$SCREENSHOT_PATH"
+        break
+    fi
+    prev_conn_ct=$cur_conn_ct
+    sleep 4
+done
