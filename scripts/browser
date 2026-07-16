@@ -1,0 +1,165 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+CDP_PORT="${CDP_PORT:-9222}"
+PROXY_PORT="${CDP_PROXY_PORT:-9223}"
+TAILSCALED_STARTED=0
+
+if ! command -v helium-browser >/dev/null 2>&1; then
+  printf 'helium-browser not found in PATH\n' >&2
+  exit 1
+fi
+
+if ! command -v python3 >/dev/null 2>&1; then
+  printf 'python3 not found in PATH\n' >&2
+  exit 1
+fi
+
+if ! command -v systemctl >/dev/null 2>&1; then
+  printf 'systemctl not found in PATH\n' >&2
+  exit 1
+fi
+
+if [[ "$CDP_PORT" == "$PROXY_PORT" ]]; then
+  printf 'CDP_PORT and CDP_PROXY_PORT must be different\n' >&2
+  exit 1
+fi
+
+cleanup() {
+  if [[ -n "${PROXY_PID:-}" ]]; then
+    kill "$PROXY_PID" >/dev/null 2>&1 || true
+  fi
+
+  if [[ -n "${BROWSER_PID:-}" ]]; then
+    kill "$BROWSER_PID" >/dev/null 2>&1 || true
+  fi
+
+  if [[ -n "${USER_DATA_DIR:-}" ]]; then
+    rm -rf "$USER_DATA_DIR"
+  fi
+
+  if [[ "$TAILSCALED_STARTED" == "1" ]]; then
+    sudo systemctl stop tailscaled.service >/dev/null 2>&1 || true
+  fi
+}
+
+trap cleanup EXIT INT TERM
+
+sudo systemctl start tailscaled.service
+TAILSCALED_STARTED=1
+sudo tailscale up
+
+if [[ -n "${CDP_PROXY_BIND_HOST:-}" ]]; then
+  PROXY_BIND_HOST="$CDP_PROXY_BIND_HOST"
+else
+  TAILSCALE_LINE="$(ip -4 -o addr show dev tailscale0 2>/dev/null || true)"
+  if [[ -z "$TAILSCALE_LINE" ]]; then
+    printf 'tailscale0 has no IPv4 address; cannot expose CDP proxy\n' >&2
+    exit 1
+  fi
+
+  TAILSCALE_CIDR="${TAILSCALE_LINE#* inet }"
+  TAILSCALE_CIDR="${TAILSCALE_CIDR%% *}"
+  PROXY_BIND_HOST="${TAILSCALE_CIDR%%/*}"
+fi
+
+
+helium-browser \
+  --remote-debugging-port="$CDP_PORT" \
+  >/tmp/helium-browser.log 2>&1 &
+BROWSER_PID=$!
+
+for _ in $(seq 1 80); do
+  if python3 - "$CDP_PORT" <<'PY'
+import socket
+import sys
+
+port = int(sys.argv[1])
+s = socket.socket()
+s.settimeout(0.2)
+try:
+    s.connect(("127.0.0.1", port))
+    sys.exit(0)
+except OSError:
+    sys.exit(1)
+finally:
+    s.close()
+PY
+  then
+    break
+  fi
+
+  if ! kill -0 "$BROWSER_PID" >/dev/null 2>&1; then
+    printf 'helium-browser exited unexpectedly. Log: /tmp/helium-browser.log\n' >&2
+    exit 1
+  fi
+
+  sleep 0.25
+done
+
+if ! kill -0 "$BROWSER_PID" >/dev/null 2>&1; then
+  printf 'helium-browser failed to start. Log: /tmp/helium-browser.log\n' >&2
+  exit 1
+fi
+
+python3 - "$PROXY_BIND_HOST" "$PROXY_PORT" "$CDP_PORT" <<'PY' &
+import socket
+import socketserver
+import sys
+import threading
+
+bind_host = sys.argv[1]
+listen_port = int(sys.argv[2])
+target_port = int(sys.argv[3])
+target_host = "127.0.0.1"
+
+
+def forward(src, dst):
+    try:
+        while True:
+            data = src.recv(65536)
+            if not data:
+                break
+            dst.sendall(data)
+    except OSError:
+        pass
+    finally:
+        try:
+            dst.shutdown(socket.SHUT_WR)
+        except OSError:
+            pass
+
+
+class Handler(socketserver.BaseRequestHandler):
+    def handle(self):
+        upstream = socket.create_connection((target_host, target_port), timeout=5)
+        t1 = threading.Thread(target=forward, args=(self.request, upstream), daemon=True)
+        t2 = threading.Thread(target=forward, args=(upstream, self.request), daemon=True)
+        t1.start()
+        t2.start()
+        t1.join()
+        t2.join()
+        upstream.close()
+
+
+class Server(socketserver.ThreadingTCPServer):
+    allow_reuse_address = True
+
+
+with Server((bind_host, listen_port), Handler) as server:
+    server.serve_forever()
+PY
+PROXY_PID=$!
+
+sleep 0.2
+if ! kill -0 "$PROXY_PID" >/dev/null 2>&1; then
+  printf 'Proxy failed to start on %s:%s\n' "$PROXY_BIND_HOST" "$PROXY_PORT" >&2
+  exit 1
+fi
+
+printf 'helium-browser CDP: 127.0.0.1:%s\n' "$CDP_PORT"
+printf 'Tailscale proxy endpoint: %s:%s -> 127.0.0.1:%s\n' "$PROXY_BIND_HOST" "$PROXY_PORT" "$CDP_PORT"
+printf 'Test endpoint: http://<host-ip>:%s/json/version\n' "$PROXY_PORT"
+
+wait "$BROWSER_PID"

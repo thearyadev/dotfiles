@@ -1,9 +1,10 @@
 #!/bin/bash
 set -e
 
-# Ensure script is run as root to avoid sudo timeouts during cleanup
+# Ensure script is run as root so long backups do not hit a sudo timeout
+# before cleanup or package list export.
 if [ "$EUID" -ne 0 ]; then
-  echo "Please run this script as root (e.g., sudo ./backup.sh)"
+  echo "Please run this script as root (e.g., sudo ./scripts/backup-home.sh)"
   exit 1
 fi
 
@@ -12,7 +13,7 @@ BACKUP_DEST="/mnt/critical/backups/pc"
 HOME_SUBVOL="/home"
 REMOTE_HOST="root@192.168.30.69"
 
-# Cleanup function - runs on exit, error, or interrupt
+# Cleanup function - runs on exit or interrupt
 cleanup() {
     echo "Cleaning up..."
     # Remove snapshot if it exists
@@ -22,8 +23,14 @@ cleanup() {
     fi
 }
 
-# Register cleanup on exit, error, and interrupt
-trap cleanup EXIT ERR INT TERM
+# Register cleanup on exit and interrupt
+trap cleanup EXIT INT TERM
+
+if [ -e "$SNAPSHOT_PATH" ]; then
+    echo "Snapshot path already exists: $SNAPSHOT_PATH"
+    echo "Remove it before running this backup."
+    exit 1
+fi
 
 echo "Creating readonly snapshot..."
 btrfs subvolume snapshot -r "$HOME_SUBVOL" "$SNAPSHOT_PATH"
@@ -32,8 +39,7 @@ echo "Ensuring remote backup directory exists..."
 ssh "$REMOTE_HOST" "mkdir -p '$BACKUP_DEST'"
 
 echo "Backing up /home via snapshot..."
-# Removed sudo (since script is run as root)
-# Added standard exclusions to save time/space
+# --delete requires BACKUP_DEST to be dedicated to this backup.
 rsync -aAXH --delete --progress \
     --partial --timeout=120 \
     --exclude='.cache/' \
@@ -44,7 +50,6 @@ rsync -aAXH --delete --progress \
     "$REMOTE_HOST:$BACKUP_DEST/"
 
 echo "Saving package list..."
-# Getting pacman list (note: run as root, this behaves the same)
-pacman -Qqe | ssh "$REMOTE_HOST" "cat > '$BACKUP_DEST/pkglist.txt'"
+pacman -Qqe | ssh "$REMOTE_HOST" "tmp='$BACKUP_DEST/pkglist.txt.tmp' && cat > \"$tmp\" && mv \"$tmp\" '$BACKUP_DEST/pkglist.txt'"
 
 echo "Backup complete!"
